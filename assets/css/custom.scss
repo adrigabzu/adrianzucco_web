@@ -1,0 +1,246 @@
+// Ideas from https://connorrothschild.github.io/v2/post/animate-hugo-academic/#step-3-add-css
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900');
+
+@font-face {
+  font-family: "Raleway", sans-serif;
+  // src: url('../fonts/Futura-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// bg-primary-500.dark {
+//   background-color: #000000;
+// }
+
+html {
+  font-family: 'Raleway', sans-serif;
+}
+
+// page-body {
+//   background: linear-gradient(-45deg, #000000, #004e92, #000428);
+//   background-size: 400% 400%;
+//   animation: gradient 15s ease infinite;
+//   // height: 100vh;
+
+//   @keyframes gradient {
+//     0% {
+//       background-position: 0% 50%;
+//     }
+
+//     50% {
+//       background-position: 100% 50%;
+//     }
+
+//     100% {
+//       background-position: 0% 50%;
+//     }
+//   }
+// }
+
+
+
+// .page-body{
+//     background: linear-gradient(-45deg, #000000, #004e92, #000428);
+// 	background-size: 400% 400%;
+// 	animation: gradient 15s ease infinite;
+// 	// height: 100vh;
+
+//     @keyframes gradient {
+//         0% {background-position: 0% 50%;}
+//         50% {background-position: 100% 50%;}
+//         100% {background-position: 0% 50%;}
+//     }
+
+// }
+
+#about {
+
+  .article-style {
+    font-size: 90%;
+  }
+
+  // color: #ffffff !important;
+
+  // background-image: url("../uploads/network_moving.gif");
+  // background-image: url("../uploads/network.gif");
+  // background-position: center; /* Center the image */
+  // background-repeat: no-repeat; /* Do not repeat the image */
+  // background-size: cover; 
+
+  .portrait-title h2 {
+    // color: rgb(255, 255, 255);
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+  }
+
+  .portrait-title h3 {
+    color: rgb(0, 0, 0);
+  }
+
+  .portrait-title a {
+    color: rgb(0, 0, 0);
+  }
+
+  .network-icon a {
+    color: rgb(0, 0, 0);
+  }
+
+
+  // Animated gradient
+  background: linear-gradient(-45deg, 
+    #003161,
+    #872341,
+    #D84040);
+  // background: linear-gradient(-45deg, #363333, #004e92, #000428);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  // height: 100vh;
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  // background-image: url("../uploads/backup_featured.jpg");
+  // background-size: cover;
+  // // background-repeat: no-repeat;
+  // -webkit-animation: slidein 100s;
+  // animation: slidein 100s;
+
+  // -webkit-animation-fill-mode: forwards;
+  // animation-fill-mode: forwards;
+
+  // -webkit-animation-iteration-count: infinite;
+  // animation-iteration-count: infinite;
+
+  // -webkit-animation-direction: alternate;
+  // animation-direction: alternate;
+
+  // @-webkit-keyframes slidein {
+  //     from {background-position: top; background-size:3000px; }
+  //     to {background-position: -100px 0px;background-size:2750px;}
+  //     }
+
+  // @keyframes slidein {
+  // from {background-position: top; background-size:1000px; }
+  // to {background-position: -100px 0px; background-size:2750px;}
+
+  // }
+
+
+  // Animations for text
+  @-webkit-keyframes slide-from-right {
+    0% {
+      -webkit-transform: translateX(150%);
+      transform: translateX(150%)
+    }
+
+    100% {
+      -webkit-transform: translateX(0%);
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes slide-from-right {
+    0% {
+      -webkit-transform: translateX(150%);
+      transform: translateX(150%)
+    }
+
+    100% {
+      -webkit-transform: translateX(0%);
+      transform: translateX(0%);
+    }
+  }
+
+  // .biography-title {
+  //   -webkit-animation: slide-from-right 1s cubic-bezier(0.87, 0, 0.13, 1) forwards;
+  //           animation: slide-from-right 1s cubic-bezier(0.87, 0, 0.13, 1) forwards;
+  // }
+
+  .article-style {
+    // -webkit-animation: slide-from-right 1s cubic-bezier(0.87, 0, 0.13, 1) forwards;
+    // animation: slide-from-right 1s cubic-bezier(0.87, 0, 0.13, 1) forwards;
+    // -webkit-animation-delay: 200ms;
+    // animation-delay: 200ms;
+    -webkit-animation: fade-in 2s forwards;
+    animation: fade-in 2s forwards;
+  }
+
+  @-webkit-keyframes slide-from-left {
+    0% {
+      -webkit-transform: translateX(-150%);
+      transform: translateX(-150%)
+    }
+
+    100% {
+      -webkit-transform: translateX(0%);
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes slide-from-left {
+    0% {
+      -webkit-transform: translateX(-150%);
+      transform: translateX(-150%)
+    }
+
+    100% {
+      -webkit-transform: translateX(0%);
+      transform: translateX(0%);
+    }
+  }
+
+  #profile {
+    -webkit-animation: slide-from-left 1s cubic-bezier(0.87, 0, 0.13, 1) forwards;
+    animation: slide-from-left 1s cubic-bezier(0.87, 0, 0.13, 1) forwards;
+    // -webkit-animation: fade-in 2s forwards;
+    // animation: fade-in 2s forwards;
+  }
+
+  @-webkit-keyframes fade-in {
+    0% {
+      opacity: 0
+    }
+
+    100% {
+      opacity: 1
+    }
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0
+    }
+
+    100% {
+      opacity: 1
+    }
+  }
+
+  .col-md-5 {
+    opacity: 0;
+    -webkit-animation: fade-in 2s forwards;
+    animation: fade-in 2s forwards;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+
+  .col-md-7 {
+    opacity: 0;
+    -webkit-animation: fade-in 2s forwards;
+    animation: fade-in 2s forwards;
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+  }
+}

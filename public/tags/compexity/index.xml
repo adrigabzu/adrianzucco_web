@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Compexity on Adrian Zucco</title>
+    <link>http://localhost:1313/tags/compexity/</link>
+    <description>Recent content in Compexity on Adrian Zucco</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>youremail@example.com (Adrian Zucco)</managingEditor>
+    <webMaster>youremail@example.com (Adrian Zucco)</webMaster>
+    <copyright>© 2025 Adrian G. Zucco</copyright>
+    <lastBuildDate>Mon, 07 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/compexity/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Introduction to Complex Systems Approaches in Public Health</title>
+      <link>http://localhost:1313/teaching/phd_course_complexity/</link>
+      <pubDate>Mon, 07 Aug 2023 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Adrian Zucco)</author>
+      <guid>http://localhost:1313/teaching/phd_course_complexity/</guid>
+      <description>PhD course to be held in May 2025. The course places great emphasis on the practical application of the Health Complexity Framework, which serves as a fundamental tool for conducting complexity research in the field of public health. Lecturer on pattern recognition in epidemiology and public health.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/teaching/phd_course_complexity/featured.jfif" />
+    </item>
+    
+  </channel>
+</rss>

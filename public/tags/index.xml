@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Adrian Zucco</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on Adrian Zucco</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>youremail@example.com (Adrian Zucco)</managingEditor>
+    <webMaster>youremail@example.com (Adrian Zucco)</webMaster>
+    <copyright>© 2025 Adrian G. Zucco</copyright>
+    <lastBuildDate>Tue, 02 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>HIV</title>
+      <link>http://localhost:1313/tags/hiv/</link>
+      <pubDate>Tue, 02 Apr 2024 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Adrian Zucco)</author>
+      <guid>http://localhost:1313/tags/hiv/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Immunology</title>
+      <link>http://localhost:1313/tags/immunology/</link>
+      <pubDate>Tue, 02 Apr 2024 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Adrian Zucco)</author>
+      <guid>http://localhost:1313/tags/immunology/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Compexity</title>
+      <link>http://localhost:1313/tags/compexity/</link>
+      <pubDate>Mon, 07 Aug 2023 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Adrian Zucco)</author>
+      <guid>http://localhost:1313/tags/compexity/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Data Science</title>
+      <link>http://localhost:1313/tags/data-science/</link>
+      <pubDate>Mon, 07 Aug 2023 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Adrian Zucco)</author>
+      <guid>http://localhost:1313/tags/data-science/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Public Health</title>
+      <link>http://localhost:1313/tags/public-health/</link>
+      <pubDate>Mon, 07 Aug 2023 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Adrian Zucco)</author>
+      <guid>http://localhost:1313/tags/public-health/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Complexity</title>
+      <link>http://localhost:1313/tags/complexity/</link>
+      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Adrian Zucco)</author>
+      <guid>http://localhost:1313/tags/complexity/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Methodology</title>
+      <link>http://localhost:1313/tags/methodology/</link>
+      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Adrian Zucco)</author>
+      <guid>http://localhost:1313/tags/methodology/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Epidemiology</title>
+      <link>http://localhost:1313/tags/epidemiology/</link>
+      <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Adrian Zucco)</author>
+      <guid>http://localhost:1313/tags/epidemiology/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Machine Learning</title>
+      <link>http://localhost:1313/tags/machine-learning/</link>
+      <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Adrian Zucco)</author>
+      <guid>http://localhost:1313/tags/machine-learning/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Mental Health</title>
+      <link>http://localhost:1313/tags/mental-health/</link>
+      <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Adrian Zucco)</author>
+      <guid>http://localhost:1313/tags/mental-health/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>MAI</title>
+      <link>http://localhost:1313/tags/mai/</link>
+      <pubDate>Thu, 15 Sep 2022 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Adrian Zucco)</author>
+      <guid>http://localhost:1313/tags/mai/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Precision Medicine</title>
+      <link>http://localhost:1313/tags/precision-medicine/</link>
+      <pubDate>Thu, 15 Sep 2022 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Adrian Zucco)</author>
+      <guid>http://localhost:1313/tags/precision-medicine/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

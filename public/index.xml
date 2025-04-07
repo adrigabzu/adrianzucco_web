@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Adrian Zucco</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Adrian Zucco</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>youremail@example.com (Adrian Zucco)</managingEditor>
+    <webMaster>youremail@example.com (Adrian Zucco)</webMaster>
+    <copyright>© 2025 Adrian G. Zucco</copyright>
+    <lastBuildDate>Tue, 02 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ShinyApp - HLA frequencies and predicted HIV epitopes</title>
+      <link>http://localhost:1313/codelab/hivapp/</link>
+      <pubDate>Tue, 02 Apr 2024 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Adrian Zucco)</author>
+      <guid>http://localhost:1313/codelab/hivapp/</guid>
+      <description>The visualizations and data showcased in this app are an effort to present and summarize the interaction between the Human Leucocyte Antigen (HLA) class I alleles and HIV viral subtypes.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/codelab/hivapp/featured.png" />
+    </item>
+    
+    <item>
+      <title>iTol - Functional HLA consensus clustering based on predicted binding affinities to HIV peptides</title>
+      <link>http://localhost:1313/codelab/hlaclust/</link>
+      <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Adrian Zucco)</author>
+      <guid>http://localhost:1313/codelab/hlaclust/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/codelab/hlaclust/featured.png" />
+    </item>
+    
+    <item>
+      <title>Introduction to Complex Systems Approaches in Public Health</title>
+      <link>http://localhost:1313/teaching/phd_course_complexity/</link>
+      <pubDate>Mon, 07 Aug 2023 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Adrian Zucco)</author>
+      <guid>http://localhost:1313/teaching/phd_course_complexity/</guid>
+      <description>PhD course to be held in May 2025. The course places great emphasis on the practical application of the Health Complexity Framework, which serves as a fundamental tool for conducting complexity research in the field of public health. Lecturer on pattern recognition in epidemiology and public health.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/teaching/phd_course_complexity/featured.jfif" />
+    </item>
+    
+    <item>
+      <title>Copenhagen Health Complexity Center</title>
+      <link>http://localhost:1313/project/complexity/</link>
+      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Adrian Zucco)</author>
+      <guid>http://localhost:1313/project/complexity/</guid>
+      <description>Member of the Copenhagen Health Complexity Center at the Department of Public Health, University of Copenhagen.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/project/complexity/featured.png" />
+    </item>
+    
+    <item>
+      <title>DANLIFE (The DANish LIFE course cohort)</title>
+      <link>http://localhost:1313/project/danlife/</link>
+      <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Adrian Zucco)</author>
+      <guid>http://localhost:1313/project/danlife/</guid>
+      <description>The DANish LIFE course cohort (DANLIFE) is a nationwide, register-based, life-course cohort that is based on comprehensive and continuously updated information on social adversity and major life events from the Danish registers.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/project/danlife/featured.jpg" />
+    </item>
+    
+    <item>
+      <title>Disease trajectories in the European Health Data Space (EHDS)</title>
+      <link>http://localhost:1313/project/ehds/</link>
+      <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Adrian Zucco)</author>
+      <guid>http://localhost:1313/project/ehds/</guid>
+      <description>Use case to study longitudinal health trajectories - and in particular those leading to cardiometabolic diseases using machine learning.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/project/ehds/featured.jfif" />
+    </item>
+    
+    <item>
+      <title>The Young Sleep Program</title>
+      <link>http://localhost:1313/project/young_sleep/</link>
+      <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Adrian Zucco)</author>
+      <guid>http://localhost:1313/project/young_sleep/</guid>
+      <description>Patterns, mechanisms, and dynamics underlying sleep health in young adults.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/project/young_sleep/featured.jpg" />
+    </item>
+    
+    <item>
+      <title>Evidence Based Clinical Application of Personalised Medicine</title>
+      <link>http://localhost:1313/teaching/evidence_based/</link>
+      <pubDate>Thu, 15 Sep 2022 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Adrian Zucco)</author>
+      <guid>http://localhost:1313/teaching/evidence_based/</guid>
+      <description>Guest lecturer in medical Artificial Intelligence and Real-World Evidence sessions since 2022. Course held in fall under the Master in Precision Medicine at the University of Copenhagen.</description>
+      
+    </item>
+    
+    <item>
+      <title>Data Doctors</title>
+      <link>http://localhost:1313/teaching/data_docs/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Adrian Zucco)</author>
+      <guid>http://localhost:1313/teaching/data_docs/</guid>
+      <description>Founder of a decentralized community for learning Data Science among medical practictioners at Righospitalet. I created multiple open-access workshops to teach the basics of Data Science in R.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/teaching/data_docs/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

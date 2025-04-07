@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Science on Adrian Zucco</title>
+    <link>http://localhost:1313/tags/data-science/</link>
+    <description>Recent content in Data Science on Adrian Zucco</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>youremail@example.com (Adrian Zucco)</managingEditor>
+    <webMaster>youremail@example.com (Adrian Zucco)</webMaster>
+    <copyright>© 2025 Adrian G. Zucco</copyright>
+    <lastBuildDate>Mon, 07 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/data-science/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Introduction to Complex Systems Approaches in Public Health</title>
+      <link>http://localhost:1313/teaching/phd_course_complexity/</link>
+      <pubDate>Mon, 07 Aug 2023 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Adrian Zucco)</author>
+      <guid>http://localhost:1313/teaching/phd_course_complexity/</guid>
+      <description>PhD course to be held in May 2025. The course places great emphasis on the practical application of the Health Complexity Framework, which serves as a fundamental tool for conducting complexity research in the field of public health. Lecturer on pattern recognition in epidemiology and public health.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/teaching/phd_course_complexity/featured.jfif" />
+    </item>
+    
+    <item>
+      <title>Data Doctors</title>
+      <link>http://localhost:1313/teaching/data_docs/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      <author>youremail@example.com (Adrian Zucco)</author>
+      <guid>http://localhost:1313/teaching/data_docs/</guid>
+      <description>Founder of a decentralized community for learning Data Science among medical practictioners at Righospitalet. I created multiple open-access workshops to teach the basics of Data Science in R.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/teaching/data_docs/featured.png" />
+    </item>
+    
+  </channel>
+</rss>
