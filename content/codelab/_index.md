@@ -1,15 +1,17 @@
 ---
 title: CodeLab
-cms_exclude: true
 
-# View.
-#   1 = List
-#   2 = Compact
-#   3 = Card
-view: 2
-
-# Optional header image (relative to `static/media/` folder).
-header:
-  caption: ''
-  image: ''
+showDate : false
+showDateUpdated : false
+showHeadingAnchors : false
+showPagination : false
+showReadingTime : false
+showTableOfContents : false
+showTaxonomies : true 
+showWordCount : false
+showSummary : false
+sharingLinks : false
+groupByYear : false
+showZenMode : true
+cardView: true
 ---

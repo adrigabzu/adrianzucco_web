@@ -2,25 +2,25 @@ disabled = false
 languageCode = "en"
 languageName = "English"
 weight = 1
-title = "Adrian Zucco"
+title = "Adrian G. Zucco"
 
 [params]
   displayName = "EN"
   isoCode = "en"
   rtl = false
   dateFormat = "2 January 2006"
-  logo = "img/icon.png"
+  # logo = "img/icon.png"
   secondaryLogo = "img/icon.png"
   description = "Adrian G. Zucco personal website"
   copyright = "© 2025 Adrian G. Zucco"
 
  [params.author]
-   name = "Adrian Zucco"
-   email = "youremail@example.com"
+   name = "Adrian G. Zucco"
+   email = "adrigabzu@sund.ku.dk"
    image = "img/avatar.JPG"
    imageQuality = 96
    headline = "Assistant Professor in Health Complexity"
-   bio = "A little bit about you"
+   bio = "Assistant Professor in Health Complexity"
    links = [
      { email = "mailto:hello@your_domain.com" },
 #     { link = "https://link-to-some-website.com/" },
@@ -35,16 +35,16 @@ title = "Adrian Zucco"
 #     { facebook = "https://facebook.com/username" },
 #     { flickr = "https://www.flickr.com/photos/username/" },
 #     { foursquare = "https://foursquare.com/username" },
-     { github = "https://github.com/username" },
+     { github = "https://github.com/adrigabzu" },
 #     { gitlab = "https://gitlab.com/username" },
-     { google = "https://www.google.com/" },
+     { google = "https://scholar.google.com/citations?user=fwnY4t0AAAAJ" },
 #     { hashnode = "https://username.hashnode.dev" },
 #     { instagram = "https://instagram.com/username" },
 #     { itch-io = "https://username.itch.io" },
 #     { keybase = "https://keybase.io/username" },
 #     { kickstarter = "https://www.kickstarter.com/profile/username" },
 #     { lastfm = "https://lastfm.com/user/username" },
-     { linkedin = "https://linkedin.com/in/username" },
+     { linkedin = "https://linkedin.com/in/adrian-gabriel-zucco-82184a72/" },
 #     { mastodon = "https://mastodon.instance/@username" },
 #     { medium = "https://medium.com/username" },
 #     { microsoft = "https://www.microsoft.com/" },

@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Immunology on Adrian Zucco</title>
+    <title>Immunology on Adrian G. Zucco</title>
     <link>http://localhost:1313/tags/immunology/</link>
-    <description>Recent content in Immunology on Adrian Zucco</description>
+    <description>Recent content in Immunology on Adrian G. Zucco</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>youremail@example.com (Adrian Zucco)</managingEditor>
-    <webMaster>youremail@example.com (Adrian Zucco)</webMaster>
+    <managingEditor>adrigabzu@sund.ku.dk (Adrian G. Zucco)</managingEditor>
+    <webMaster>adrigabzu@sund.ku.dk (Adrian G. Zucco)</webMaster>
     <copyright>© 2025 Adrian G. Zucco</copyright>
-    <lastBuildDate>Tue, 02 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/immunology/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>ShinyApp - HLA frequencies and predicted HIV epitopes</title>
-      <link>http://localhost:1313/codelab/hivapp/</link>
-      <pubDate>Tue, 02 Apr 2024 00:00:00 +0000</pubDate>
-      <author>youremail@example.com (Adrian Zucco)</author>
-      <guid>http://localhost:1313/codelab/hivapp/</guid>
-      <description>The visualizations and data showcased in this app are an effort to present and summarize the interaction between the Human Leucocyte Antigen (HLA) class I alleles and HIV viral subtypes.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/codelab/hivapp/featured.png" />
-    </item>
+    <lastBuildDate>Mon, 01 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/immunology/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>iTol - Functional HLA consensus clustering based on predicted binding affinities to HIV peptides</title>
       <link>http://localhost:1313/codelab/hlaclust/</link>
       <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
-      <author>youremail@example.com (Adrian Zucco)</author>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
       <guid>http://localhost:1313/codelab/hlaclust/</guid>
       <description></description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/codelab/hlaclust/featured.png" />
+    </item>
+    
+    <item>
+      <title>ShinyApp - HLA frequencies and predicted HIV epitopes</title>
+      <link>http://localhost:1313/codelab/hivapp/</link>
+      <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/codelab/hivapp/</guid>
+      <description>The visualizations and data showcased in this app are an effort to present and summarize the interaction between the Human Leucocyte Antigen (HLA) class I alleles and HIV viral subtypes.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/codelab/hivapp/featured.png" />
     </item>
     
   </channel>

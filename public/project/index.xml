@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on Adrian Zucco</title>
+    <title>Projects on Adrian G. Zucco</title>
     <link>http://localhost:1313/project/</link>
-    <description>Recent content in Projects on Adrian Zucco</description>
+    <description>Recent content in Projects on Adrian G. Zucco</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>youremail@example.com (Adrian Zucco)</managingEditor>
-    <webMaster>youremail@example.com (Adrian Zucco)</webMaster>
+    <managingEditor>adrigabzu@sund.ku.dk (Adrian G. Zucco)</managingEditor>
+    <webMaster>adrigabzu@sund.ku.dk (Adrian G. Zucco)</webMaster>
     <copyright>© 2025 Adrian G. Zucco</copyright>
     <lastBuildDate>Sat, 01 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/project/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
       <title>Copenhagen Health Complexity Center</title>
       <link>http://localhost:1313/project/complexity/</link>
       <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
-      <author>youremail@example.com (Adrian Zucco)</author>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
       <guid>http://localhost:1313/project/complexity/</guid>
       <description>Member of the Copenhagen Health Complexity Center at the Department of Public Health, University of Copenhagen.</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/project/complexity/featured.png" />
@@ -25,7 +25,7 @@
       <title>DANLIFE (The DANish LIFE course cohort)</title>
       <link>http://localhost:1313/project/danlife/</link>
       <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
-      <author>youremail@example.com (Adrian Zucco)</author>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
       <guid>http://localhost:1313/project/danlife/</guid>
       <description>The DANish LIFE course cohort (DANLIFE) is a nationwide, register-based, life-course cohort that is based on comprehensive and continuously updated information on social adversity and major life events from the Danish registers.</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/project/danlife/featured.jpg" />
@@ -35,7 +35,7 @@
       <title>Disease trajectories in the European Health Data Space (EHDS)</title>
       <link>http://localhost:1313/project/ehds/</link>
       <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
-      <author>youremail@example.com (Adrian Zucco)</author>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
       <guid>http://localhost:1313/project/ehds/</guid>
       <description>Use case to study longitudinal health trajectories - and in particular those leading to cardiometabolic diseases using machine learning.</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/project/ehds/featured.jfif" />
@@ -45,7 +45,7 @@
       <title>The Young Sleep Program</title>
       <link>http://localhost:1313/project/young_sleep/</link>
       <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
-      <author>youremail@example.com (Adrian Zucco)</author>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
       <guid>http://localhost:1313/project/young_sleep/</guid>
       <description>Patterns, mechanisms, and dynamics underlying sleep health in young adults.</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/project/young_sleep/featured.jpg" />

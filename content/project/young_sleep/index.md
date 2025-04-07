@@ -6,11 +6,8 @@ tags:
   - Epidemiology
   - Mental Health
 date: "2023-03-01"
-
+showSummary: true
 # Optional external URL for project (replaces project detail page).
-external_link: https://lundbeckfonden.com/en/the-young-sleep-program-patterns-mechanisms-and-dynamics-underlying-sleep-health-in-young-adults
+externalUrl: https://lundbeckfonden.com/en/the-young-sleep-program-patterns-mechanisms-and-dynamics-underlying-sleep-health-in-young-adults
 
-image:
-  caption: Generated with Leonardo AI
-  focal_point: Smart
 ---

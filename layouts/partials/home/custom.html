@@ -1,0 +1,123 @@
+<article class="flex flex-col items-center">
+  <!-- Removed px-constraints to make it wider -->
+  <div class="w-full max-w-7xl mx-auto">
+    <!-- Author profile section -->
+    <header class="py-12 flex flex-col items-center">
+      {{ with .Site.Author.image }}
+        <img src="{{ . | relURL }}" class="h-48 w-48 rounded-full mb-8" alt="{{ $.Site.Author.name }}" />
+      {{ end }}
+      
+      <h1 class="text-4xl font-extrabold mb-4">{{ .Site.Author.name }}</h1>
+      
+      {{ with .Site.Author.headline }}
+        <h2 class="text-xl text-neutral-600 dark:text-neutral-400 text-center mb-6">{{ . }}</h2>
+      {{ end }}
+      
+      {{ with .Site.Author.links }}
+        <div class="flex flex-wrap justify-center gap-4 mb-8">
+          {{ range . }}
+            <a href="{{ .url }}" class="group">
+              <div class="h-10 w-10 flex items-center justify-center rounded-full bg-neutral-200 dark:bg-black hover:bg-primary-600 dark:hover:bg-primary-600 transition-colors">
+                {{ if .icon }}
+                  <i class="{{ .icon }} text-neutral-700 dark:text-neutral-300 group-hover:text-white"></i>
+                {{ else }}
+                  {{ .name }}
+                {{ end }}
+              </div>
+            </a>
+          {{ end }}
+        </div>
+      {{ end }}
+      
+      {{ with .Site.Author.bio }}
+        <div class="prose dark:prose-invert max-w-3xl text-center">{{ . | markdownify }}</div>
+      {{ end }}
+    </header>
+    
+    <!-- Main content from _index.md -->
+    <section class="prose dark:prose-invert max-w-4xl mx-auto mb-16">
+      {{ .Content }}
+    </section>
+    
+    <!-- Projects section -->
+  
+  <!-- Recent articles section (using Blowfish's built-in partial) -->
+  {{ if .Site.Params.homepage.showRecent | default false }}
+    {{ partial "recent-articles/main.html" . }}
+  {{ end }}
+    
+    <!-- Publications section -->
+    <section class="mb-20">
+      <h2 class="text-3xl font-bold mb-10">Featured Publications</h2>
+      <div class="space-y-6">
+        {{ $publications := where site.RegularPages "Type" "publication" }}
+        {{ if $publications }}
+          {{ range first 3 $publications }}
+            <div class="bg-neutral-100 dark:bg-black p-6 rounded-lg shadow-md transition-shadow hover:shadow-lg">
+              <h3 class="text-xl font-bold mb-3">{{ .Title }}</h3>
+              {{ with .Params.authors }}
+                <p class="text-neutral-600 dark:text-neutral-400 mb-3">{{ . }}</p>
+              {{ end }}
+              <p class="text-neutral-700 dark:text-neutral-300 mb-4">{{ .Summary }}</p>
+              <div class="flex flex-wrap gap-4">
+                <a href="{{ .Permalink }}" class="text-primary-600 hover:text-primary-800 dark:hover:text-primary-400 font-medium">Read more →</a>
+                {{ with .Params.doi }}
+                  <a href="https://doi.org/{{ . }}" target="_blank" rel="noopener" class="text-neutral-600 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-200 font-medium">DOI</a>
+                {{ end }}
+              </div>
+            </div>
+          {{ end }}
+          <div class="text-center mt-8">
+            <a href="/publication/" class="inline-block px-5 py-2 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-md transition-colors">View all publications</a>
+          </div>
+        {{ else }}
+          <p class="text-neutral-600 dark:text-neutral-400">No publications found.</p>
+        {{ end }}
+      </div>
+    </section>
+    
+    <!-- Teaching section -->
+    <section class="mb-20">
+      <h2 class="text-3xl font-bold mb-10">Teaching</h2>
+      <div class="space-y-6">
+        {{ $teaching := where site.RegularPages "Type" "teaching" }}
+        {{ if $teaching }}
+          {{ range $teaching }}
+            <div class="bg-neutral-100 dark:bg-black p-6 rounded-lg shadow-md transition-shadow hover:shadow-lg">
+              <h3 class="text-xl font-bold mb-3">{{ .Title }}</h3>
+              <p class="text-neutral-700 dark:text-neutral-300 mb-4">{{ .Summary }}</p>
+              <a href="{{ .Permalink }}" class="text-primary-600 hover:text-primary-800 dark:hover:text-primary-400 font-medium">Learn more →</a>
+            </div>
+          {{ end }}
+        {{ else }}
+          <p class="text-neutral-600 dark:text-neutral-400">No teaching entries found.</p>
+        {{ end }}
+      </div>
+    </section>
+    
+    <!-- Interests section -->
+    <!-- <section class="mb-20">
+      <h2 class="text-3xl font-bold mb-10">Interests</h2>
+      <div class="prose dark:prose-invert max-w-3xl mx-auto">
+        <ul class="grid grid-cols-2 sm:grid-cols-3 gap-2">
+          <li>Explainable Machine Learning</li>
+          <li>Public Health</li>
+          <li>Complex Systems</li>
+          <li>Immunology</li>
+          <li>Cognitive Science</li>
+          <li>Philosophy</li>
+        </ul>
+      </div>
+    </section> -->
+  </div>
+</article>
+{{ if .Site.Params.homepage.layoutBackgroundBlur | default true }}
+<div id="background-blur" class="fixed opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl"></div>
+<script>
+    window.addEventListener('scroll', function (e) {
+        var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        var background_blur = document.getElementById('background-blur');
+        background_blur.style.opacity = (scroll / 300)
+    });
+</script>
+{{ end }}

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Machine Learning on Adrian Zucco</title>
+    <title>Machine Learning on Adrian G. Zucco</title>
     <link>http://localhost:1313/tags/machine-learning/</link>
-    <description>Recent content in Machine Learning on Adrian Zucco</description>
+    <description>Recent content in Machine Learning on Adrian G. Zucco</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>youremail@example.com (Adrian Zucco)</managingEditor>
-    <webMaster>youremail@example.com (Adrian Zucco)</webMaster>
+    <managingEditor>adrigabzu@sund.ku.dk (Adrian G. Zucco)</managingEditor>
+    <webMaster>adrigabzu@sund.ku.dk (Adrian G. Zucco)</webMaster>
     <copyright>© 2025 Adrian G. Zucco</copyright>
     <lastBuildDate>Wed, 01 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
       <title>Disease trajectories in the European Health Data Space (EHDS)</title>
       <link>http://localhost:1313/project/ehds/</link>
       <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
-      <author>youremail@example.com (Adrian Zucco)</author>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
       <guid>http://localhost:1313/project/ehds/</guid>
       <description>Use case to study longitudinal health trajectories - and in particular those leading to cardiometabolic diseases using machine learning.</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/project/ehds/featured.jfif" />
