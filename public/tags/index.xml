@@ -9,7 +9,47 @@
     <managingEditor>adrigabzu@sund.ku.dk (Adrian G. Zucco)</managingEditor>
     <webMaster>adrigabzu@sund.ku.dk (Adrian G. Zucco)</webMaster>
     <copyright>© 2025 Adrian G. Zucco</copyright>
-    <lastBuildDate>Mon, 01 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Complexity</title>
+      <link>http://localhost:1313/tags/complexity/</link>
+      <pubDate>Tue, 11 Jun 2024 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/tags/complexity/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Life Course</title>
+      <link>http://localhost:1313/tags/life-course/</link>
+      <pubDate>Tue, 11 Jun 2024 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/tags/life-course/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Pattern Recognition</title>
+      <link>http://localhost:1313/tags/pattern-recognition/</link>
+      <pubDate>Tue, 11 Jun 2024 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/tags/pattern-recognition/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Sleep</title>
+      <link>http://localhost:1313/tags/sleep/</link>
+      <pubDate>Tue, 11 Jun 2024 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/tags/sleep/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>HIV</title>
@@ -27,6 +67,86 @@
       <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
       <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
       <guid>http://localhost:1313/tags/immunology/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>AHSCT</title>
+      <link>http://localhost:1313/tags/ahsct/</link>
+      <pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/tags/ahsct/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>CMV</title>
+      <link>http://localhost:1313/tags/cmv/</link>
+      <pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/tags/cmv/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Correlation Network Analysis</title>
+      <link>http://localhost:1313/tags/correlation-network-analysis/</link>
+      <pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/tags/correlation-network-analysis/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Cytomegalovirus</title>
+      <link>http://localhost:1313/tags/cytomegalovirus/</link>
+      <pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/tags/cytomegalovirus/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Lipidomics</title>
+      <link>http://localhost:1313/tags/lipidomics/</link>
+      <pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/tags/lipidomics/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Metabolomics</title>
+      <link>http://localhost:1313/tags/metabolomics/</link>
+      <pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/tags/metabolomics/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TMAO</title>
+      <link>http://localhost:1313/tags/tmao/</link>
+      <pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/tags/tmao/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>WGCNA</title>
+      <link>http://localhost:1313/tags/wgcna/</link>
+      <pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/tags/wgcna/</guid>
       <description></description>
       
     </item>
@@ -57,16 +177,6 @@
       <pubDate>Mon, 07 Aug 2023 00:00:00 +0000</pubDate>
       <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
       <guid>http://localhost:1313/tags/public-health/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Complexity</title>
-      <link>http://localhost:1313/tags/complexity/</link>
-      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
-      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
-      <guid>http://localhost:1313/tags/complexity/</guid>
       <description></description>
       
     </item>
@@ -112,6 +222,26 @@
     </item>
     
     <item>
+      <title>Respiratory Signs and Symptoms</title>
+      <link>http://localhost:1313/tags/respiratory-signs-and-symptoms/</link>
+      <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/tags/respiratory-signs-and-symptoms/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Viral Infection</title>
+      <link>http://localhost:1313/tags/viral-infection/</link>
+      <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/tags/viral-infection/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
       <title>MAI</title>
       <link>http://localhost:1313/tags/mai/</link>
       <pubDate>Thu, 15 Sep 2022 00:00:00 +0000</pubDate>
@@ -127,6 +257,36 @@
       <pubDate>Thu, 15 Sep 2022 00:00:00 +0000</pubDate>
       <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
       <guid>http://localhost:1313/tags/precision-medicine/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Innate Immunity</title>
+      <link>http://localhost:1313/tags/innate-immunity/</link>
+      <pubDate>Thu, 01 Sep 2022 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/tags/innate-immunity/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Infectious Diseases</title>
+      <link>http://localhost:1313/tags/infectious-diseases/</link>
+      <pubDate>Tue, 16 Aug 2022 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/tags/infectious-diseases/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>XAI</title>
+      <link>http://localhost:1313/tags/xai/</link>
+      <pubDate>Tue, 16 Aug 2022 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/tags/xai/</guid>
       <description></description>
       
     </item>

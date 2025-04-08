@@ -7,7 +7,7 @@
 
 colorScheme = "adrian"
 defaultAppearance = "dark" # valid options: light or dark
-autoSwitchAppearance = false
+autoSwitchAppearance = true
 
 enableSearch = true
 enableCodeCopy = false
@@ -18,8 +18,8 @@ replyByEmail = false
 # robots = ""
 
 disableImageOptimization = false
-disableTextInHeader = false
-# backgroundImageWidth = 1200
+disableTextInHeader = true
+backgroundImageWidth = 1200
 
 # defaultBackgroundImage = "IMAGE.jpg" # used as default for background images 
 # defaultFeaturedImage = "IMAGE.jpg" # used as default for featured images in all articles
@@ -50,7 +50,7 @@ disableTextInHeader = false
   showMoreLinkDest = "/codelab/"
   cardView = true
   cardViewScreenWidth = false
-  layoutBackgroundBlur = true # only used when layout equals background
+  layoutBackgroundBlur = false # only used when layout equals background
 
 [article]
   showDate = false

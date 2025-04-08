@@ -50,7 +50,7 @@
             {{ $authorImage = $authorImage.Fill (print "288x288 q" ( $.Site.Params.Author.imagequality | default "96" ))
             }}
             {{ end }}
-            <img class="mb-4 rounded-full h-36 w-36" width="144" height="144"
+            <img class="mb-4 rounded-full h-48 w-48" width="192" height="192"
               alt="{{ $.Site.Params.Author.name | default " Author" }}" src="{{ $authorImage.RelPermalink }}" />
             {{ end }}
             {{ end }}
@@ -62,12 +62,17 @@
               {{ . | markdownify }}
             </h2>
             {{ end }}
+            {{ with .Site.Params.Author.location }}
+            <h3 class="mt-0 mb-4 text-xl text-secondary-800 dark:text-secondary-300 text-center md:text-left"></h3>
+              {{ . | markdownify }}
+            </h3>
+            {{ end }}
             {{ with .Site.Params.Author.links }}
             <div class="mt-3 mb-6 text-2xl">
               <div class="flex flex-wrap">
                 {{ range $links := . }}
                 {{ range $name, $url := $links }}
-                <a class="mr-3 hover:text-primary-400 text-primary-800 dark:text-primary-200" href="{{ $url }}"
+                <a class="mr-3 hover:text-primary-400 text-primary-800 dark:text-primary-800" href="{{ $url }}"
                   target="_blank" aria-label="{{ $name | title }}" rel="me noopener noreferrer">{{ partial
                   "icon.html" $name }}</a>
                 {{ end }}
@@ -86,7 +91,7 @@
             <!-- Recent articles section -->
             {{ if .Site.Params.homepage.showRecent | default false }}
             <section class="mb-20">
-              <h2 class="text-3xl font-bold mb-10">Recent Articles</h2> <!-- Added heading for consistency -->
+              <h2 class="text-3xl font-bold mb-10">Projects</h2> <!-- Added heading for consistency -->
               {{ partial "recent-articles/main.html" . }}
             </section>
             {{ end }}

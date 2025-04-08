@@ -9,7 +9,17 @@
     <managingEditor>adrigabzu@sund.ku.dk (Adrian G. Zucco)</managingEditor>
     <webMaster>adrigabzu@sund.ku.dk (Adrian G. Zucco)</webMaster>
     <copyright>© 2025 Adrian G. Zucco</copyright>
-    <lastBuildDate>Mon, 01 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Defining the landscape of sleep problems in young adults using machine learning on nationwide register data from 2 million individuals</title>
+      <link>http://localhost:1313/publication/zucco-poster-sleep-2024/</link>
+      <pubDate>Tue, 11 Jun 2024 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/publication/zucco-poster-sleep-2024/</guid>
+      <description>Background: Sleep problems among young adults pose a major public health concern. To understand the patterns underlying the complexity of sleep in this population, we report trends in sleep problems and clusters of life-course factors using Machine Learning on nationwide surveys and registries. &lt;br /&gt; &lt;strong&gt;Methods&lt;/strong&gt;:  We explored trends in the last decade using data from the Danish National Health Survey, MEDSTAT and The Danish National Patient Registry in self-reported sleep problems, medications such as melatonin and diagnoses for organic and non-organic sleep disorders. We used Natural Language Processing to learn life-course constellations based on registry data from the DANLIFE cohort of 2 million individuals. We then explored clusters of childhood adversity, diagnoses, medications and medical procedures centered around sleep-related medical terms to identify related factors. &lt;br /&gt; &lt;strong&gt;Results&lt;/strong&gt;:  In the last decade, self-reported sleep problems and sleep medications have been increasing while diagnoses have remained steady. When looking at life-course constellations based on known sleep-related diagnoses, medications and medical procedures we found multiple clusters. Organic clusters involved factors related to respiratory issues, surgical interventions and fatigue from various causes while non-organic clusters were populated by mood and neurodevelopmental disorders. Interventions also differed among clusters where organic clusters had a higher prevalence of pharmacological and medical procedures while non-organic clusters reflected an enrichment in parental counselling and individual psychoeducation. &lt;br /&gt; &lt;strong&gt;Conclusion&lt;/strong&gt;:  Sleep problems in young adults are increasing. By zooming out to identify clusters and life-course constellations of sleep problems, we provide a basis for zooming into the mechanisms and targeted interventions for young adults.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/publication/zucco-poster-sleep-2024/featured.png" />
+    </item>
     
     <item>
       <title>iTol - Functional HLA consensus clustering based on predicted binding affinities to HIV peptides</title>
@@ -32,6 +42,26 @@
     </item>
     
     <item>
+      <title>Associations of functional human leucocyte antigen class I groups with HIV viral load in a heterogeneous cohort</title>
+      <link>http://localhost:1313/publication/zucco-associations-2023/</link>
+      <pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/publication/zucco-associations-2023/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/publication/zucco-associations-2023/featured.png" />
+    </item>
+    
+    <item>
+      <title>Metabolic Profiling Early Post-Allogeneic Haematopoietic Cell Transplantation in the Context of CMV Infection</title>
+      <link>http://localhost:1313/publication/rasmussen-metabolic-2023/</link>
+      <pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/publication/rasmussen-metabolic-2023/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
       <title>Introduction to Complex Systems Approaches in Public Health</title>
       <link>http://localhost:1313/teaching/phd_course_complexity/</link>
       <pubDate>Mon, 07 Aug 2023 00:00:00 +0000</pubDate>
@@ -49,6 +79,16 @@
       <guid>http://localhost:1313/project/complexity/</guid>
       <description>Member of the Copenhagen Health Complexity Center at the Department of Public Health, University of Copenhagen.</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/project/complexity/featured.png" />
+    </item>
+    
+    <item>
+      <title>Association between ten-eleven methylcytosine dioxygenase 2 genetic variation and viral load in people with HIV</title>
+      <link>http://localhost:1313/publication/murray-association-2023/</link>
+      <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/publication/murray-association-2023/</guid>
+      <description></description>
+      
     </item>
     
     <item>
@@ -82,12 +122,102 @@
     </item>
     
     <item>
+      <title>Impact of Antibiotic Treatment on the Gut Microbiome and its Resistome in Hematopoietic Stem Cell Transplant Recipients</title>
+      <link>http://localhost:1313/publication/norgaard-impact-2023/</link>
+      <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/publication/norgaard-impact-2023/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Chest x-ray imaging score is associated with severity of COVID-19 pneumonia: the MBrixia score</title>
+      <link>http://localhost:1313/publication/jensen-chest-2022/</link>
+      <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/publication/jensen-chest-2022/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
       <title>Evidence Based Clinical Application of Personalised Medicine</title>
       <link>http://localhost:1313/teaching/evidence_based/</link>
       <pubDate>Thu, 15 Sep 2022 00:00:00 +0000</pubDate>
       <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
       <guid>http://localhost:1313/teaching/evidence_based/</guid>
       <description>Guest lecturer in medical Artificial Intelligence and Real-World Evidence sessions since 2022. Course held in fall under the Master in Precision Medicine at the University of Copenhagen.</description>
+      
+    </item>
+    
+    <item>
+      <title>Early stimulated immune responses predict clinical disease severity in hospitalized COVID-19 patients</title>
+      <link>http://localhost:1313/publication/svanberg-early-2022/</link>
+      <pubDate>Thu, 01 Sep 2022 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/publication/svanberg-early-2022/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Personalized survival probabilities for SARS-CoV-2 positive patients by explainable machine learning</title>
+      <link>http://localhost:1313/publication/xai_sarscov2/</link>
+      <pubDate>Tue, 16 Aug 2022 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/publication/xai_sarscov2/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/publication/xai_sarscov2/featured.png" />
+    </item>
+    
+    <item>
+      <title>Explainable Machine Learning for Precision Medicine of Patients with Infectious Diseases</title>
+      <link>http://localhost:1313/publication/zucco-explainable-2022/</link>
+      <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/publication/zucco-explainable-2022/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/publication/zucco-explainable-2022/featured.png" />
+    </item>
+    
+    <item>
+      <title>Readmissions, Postdischarge Mortality, and Sustained Recovery Among Patients Admitted to Hospital With Coronavirus Disease 2019 (COVID-19)</title>
+      <link>http://localhost:1313/publication/moestrup-readmissions-2022/</link>
+      <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/publication/moestrup-readmissions-2022/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>My First Blog Post</title>
+      <link>http://localhost:1313/publication/test/</link>
+      <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/publication/test/</guid>
+      <description>Learn more about me and why I am starting this blog.</description>
+      
+    </item>
+    
+    <item>
+      <title>Human Immunotypes Impose Selection on Viral Genotypes Through Viral Epitope Specificity</title>
+      <link>http://localhost:1313/publication/gabrielaite-human-2021/</link>
+      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/publication/gabrielaite-human-2021/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>The association of human leukocyte antigen alleles with clinical disease progression in HIV-positive cohorts with varied treatment strategies</title>
+      <link>http://localhost:1313/publication/ekenberg-association-2021/</link>
+      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/publication/ekenberg-association-2021/</guid>
+      <description></description>
       
     </item>
     

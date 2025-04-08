@@ -9,11 +9,11 @@
   font-style: normal;
 }
 
-// /* Wider container settings */
-// :root {
-//   --container-7xl: 90rem; /* Increase from default */
-//   --container-wide: 100rem; /* New extra-wide container */
-// }
+/* Wider container settings */
+:root {
+  --container-7xl: 90rem; /* Increase from default */
+  --container-wide: 100rem; /* New extra-wide container */
+}
 
 // /* Improve background blur effect */
 // .backdrop-blur-2xl {
@@ -35,11 +35,11 @@
 //   transition: opacity 0.3s ease-in-out;
 // }
 
-// /* Remove padding constraints in header */
-// .fixed.inset-x-0 {
-//   padding-left: 0 !important;
-//   padding-right: 0 !important;
-// }
+/* Remove padding constraints in header */
+.fixed.inset-x-0 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
 
 // /* Override menu width and padding */
 // .main-menu {
@@ -52,43 +52,51 @@
 //   max-width: 100rem;  /* Increased for wider menu */
 // }
 
-// /* Make header wider */
-// header .max-w-\[64rem\], 
-// .fixed .relative.max-w-\[64rem\] {
-//   max-width: var(--container-wide);
-// }
+/* Make header wider */
+header .max-w-\[64rem\],
+.fixed .relative.max-w-\[64rem\] {
+  max-width: var(--container-wide);
+}
 
-// /* Increase font sizes in header - make even bigger */
-// .main-menu nav a .text-base {
-//   font-size: 1.8rem; /* Increased from 1.5rem */
-//   font-weight: 600;  /* Made bolder for better visibility */
-// }
+/* Increase font sizes in header - make even bigger */
+.main-menu nav a .text-base {
+  font-size: 1.8rem; /* Increased from 1.5rem */
+  font-weight: 600;  /* Made bolder for better visibility */
+}
 
-// /* Increase font size for mobile menu items */
-// .main-menu .text-bg.font-bg {
-//   font-size: 1.5rem; /* Increased from 1.3rem */
-// }
+/* Increase font size for mobile menu items */
+.main-menu .text-bg.font-bg {
+  font-size: 1.5rem; /* Increased from 1.3rem */
+}
 
-// /* Make site title larger */
-// .main-menu .text-base.font-medium {
-//   font-size: 2rem; /* Increased from 1.8rem */
-//   font-weight: 700; /* Made bolder for better visibility */
-// }
+/* Make site title larger */
+.main-menu .text-base.font-medium {
+  font-size: 2rem; /* Increased from 1.8rem */
+  font-weight: 700; /* Made bolder for better visibility */
+}
 
-// /* Increase spacing in header */
-// .main-menu .gap-x-5 {
-//   gap: 2.5rem; /* Increased from 2rem for more spacing between menu items */
-// }
+/* Increase spacing in header */
+.main-menu .gap-x-5 {
+  gap: 2.5rem; /* Increased from 2rem for more spacing between menu items */
+}
 
-// /* Add extra breathing room in the header */
-// .main-menu.px-4 {
-//   padding-left: 1.5rem;
-//   padding-right: 1.5rem;
-// }
+/* Add extra breathing room in the header */
+.main-menu.px-4 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
 
-// @media (min-width: 640px) {
-//   .main-menu.sm\:px-6 {
-//     padding-left: 1.5rem;
-//     padding-right: 1.5rem;
-//   }
-// }
+/* Improve card thumbnail image fitting */
+.thumbnail_card {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 640px) {
+  .main-menu.sm\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
