@@ -26,8 +26,8 @@
   
   
   
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.b87e13667c32ecc8d39ba8f1b263a2503ba36351a6d47dc6ac6a4ac0bab9411fc9d837e5ce47eab69c37f7e45b6d7834b15fec589a858ab83374d0149f3f4f02.css"
-    integrity="sha512-uH4TZnwy7MjTm6jxsmOiUDujY1Gm1H3GrGpKwLq5QR/J2Dflzkfqtpw39&#43;RbbXg0sV/sWJqFirgzdNAUnz9PAg==" />
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.b3c9aef181d2f825d815580e0264821413f6a1e8e9867c78cb549998f1d6be846aac419ee8206db6e335f122f13942f6f16a229968d17478964cf212252374c3.css"
+    integrity="sha512-s8mu8YHS&#43;CXYFVgOAmSCFBP2oejphnx4y1SZmPHWvoRqrEGe6CBttuM18SLxOUL28WoimWjRdHiWTPISJSN0ww==" />
   
   
   <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
@@ -141,7 +141,7 @@
   
 </head>
 <body
-  class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32 scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
+  class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-wide bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32 scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
   <div id="particles-js" class="fixed inset-0 -z-10"></div> 
   <div id="the-top" class="absolute flex self-center">
     <a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
@@ -573,12 +573,26 @@
 </div>
 
   </div>
+  <div class="min-h-[148px]"></div>
+  <div class="fixed inset-x-0 min-h-[130px] opacity-65 pl-[24px] pr-[24px] bg-gradient-to-b from-neutral from-60% dark:from-neutral-800 to-transparent mix-blend-normal" style="z-index:80"></div>
+  <div class="fixed inset-x-0 pl-[24px] pr-[24px]" style="z-index:100">
+    <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl"></div>
+    <div class="relative max-w-wide ml-auto mr-auto">
+    </div>
+  </div>
   
   
   
     <script src="/js/particles.js"></script>
     <script src="/js/particles-config.js"></script>
   
+  <script>
+    window.addEventListener('scroll', function (e) {
+      var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+      var background_blur = document.getElementById('menu-blur');
+      background_blur.style.opacity = (scroll / 200);
+    });
+  </script>
 </body>
 
 </html>

@@ -5,11 +5,8 @@ tags:
   - Data Science
   - mAI
 date: "2018-09-01"
-
+showSummary: true
+showHero: true
 # Optional external URL for project (replaces project detail page).
-external_link: https://adrigabzu.github.io/data-doctors/
-
-image:
-  caption: "Author: Natalia Bilenko, modified from Drew Conway"
-  focal_point: Smart
+externalUrl:  https://adrigabzu.github.io/data-doctors/
 ---

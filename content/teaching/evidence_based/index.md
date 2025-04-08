@@ -5,11 +5,8 @@ tags:
   - Precision medicine
   - mAI
 date: "2022-09-15"
-
+showSummary: true
+showHero: true
 # Optional external URL for project (replaces project detail page).
-external_link: https://personligmedicin.ku.dk/kursus/evidens/
-
-image:
-  caption: 
-  focal_point: Smart
+externalUrl: https://personligmedicin.ku.dk/kursus/evidens/
 ---

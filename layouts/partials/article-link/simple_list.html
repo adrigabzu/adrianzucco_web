@@ -1,0 +1,94 @@
+{{/* Get featured image logic */}}
+{{- $images := .Resources.ByType "image" -}}
+{{- $featured := $images.GetMatch "*feature*" -}}
+{{- if not $featured }}{{ $featured = $images.GetMatch "{*cover*,*thumbnail*}" }}{{ end -}}
+{{ if and .Params.featureimage (not $featured) }}
+  {{- $url:= .Params.featureimage -}}
+  {{ $featured = resources.GetRemote $url }}
+{{ end }}
+{{- if not $featured }}{{ with .Site.Params.defaultFeaturedImage }}{{ $featured = resources.Get . }}{{ end }}{{ end -}}
+{{ if .Params.hideFeatureImage }}{{ $featured = false }}{{ end }}
+{{ $disableImageOptimization := .Page.Site.Params.disableImageOptimization | default false }}
+
+{{/* Main container with styling similar to teaching section items */}}
+<div class="bg-neutral-100/80 dark:bg-black/60 p-6 rounded-lg shadow-md transition-shadow hover:shadow-lg backdrop-blur-sm mb-6">
+  {{/* Flex container: Columns on small screens, Rows (side-by-side) on medium+ screens */}}
+  <div class="flex flex-col md:flex-row">
+
+    {{/* Left Column: Title, Meta, Summary */}}
+    {{/* Takes 2/3 width on medium+ screens if image exists, full width otherwise */}}
+    <div class="{{ if $featured }}md:w-2/3{{ else }}w-full{{ end }} {{ if $featured }}md:pr-6{{ end }}">
+      <h3 class="text-xl font-bold mb-3">
+        {{ $link := "" }}
+        {{ $target := "" }}
+        {{ $rel := "" }}
+        {{ with .Params.externalUrl }}
+          {{ $link = . }}
+          {{ $target = "_blank" }}
+          {{ $rel = "external noopener noreferrer" }}
+        {{ else }}
+          {{ $link = .RelPermalink }}
+        {{ end }}
+        <a href="{{ $link }}" {{ with $target }}target="{{ . }}"{{ end }} {{ with $rel }}rel="{{ . }}"{{ end }} class="no-underline hover:underline transition-all duration-200 hover:text-primary-600 dark:hover:text-primary-400">
+          {{ .Title | emojify }}
+          {{/* External link icon */}}
+          {{ with .Params.externalUrl }}
+          <span class="text-xs align-top cursor-default text-neutral-400 dark:text-neutral-500">
+            <span class="rtl:hidden">&#8599;</span>
+            <span class="ltr:hidden">&#8598;</span>
+          </span>
+          {{ end }}
+        </a>
+        {{/* Draft Badge */}}
+        {{ if and .Draft .Site.Params.article.showDraftLabel }}
+          <span class="ml-2 rtl:mr-2 align-middle">{{ partial "badge.html" (i18n "article.draft" | emojify) }}</span>
+        {{ end }}
+      </h3>
+
+      {{/* Article Meta */}}
+      <div class="text-sm text-neutral-500 dark:text-neutral-400 mb-4">
+        {{ partial "article-meta/basic.html" . }}
+      </div>
+
+      {{/* Summary */}}
+      {{ if .Params.showSummary | default (.Site.Params.list.showSummary | default false) }}
+      <div class="prose dark:prose-invert max-w-none text-neutral-700 dark:text-neutral-300">
+        {{ .Summary | plainify | truncate 150 }}
+      </div>
+      {{ end }}
+
+       {{/* Extend Hook */}}
+       {{ if templates.Exists "partials/extend-article-link.html" }}
+         <div class="mt-4"> {{ partial "extend-article-link.html" . }} </div>
+       {{ end }}
+    </div>
+
+    {{/* Right Column: Image */}}
+    {{/* Takes 1/3 width on medium+ screens, appears below text on small screens */}}
+    {{- with $featured -}}
+    <div class="md:w-1/3 mt-4 md:mt-0">
+      {{ $img := . }}
+      {{ if not $disableImageOptimization }}
+        {{/* Resize image for card view */}}
+        {{ $img = $img.Fill "400x250 Center" }}
+      {{ end }}
+
+      {{/* Link the image */}}
+      {{ $link := "" }}
+      {{ $target := "" }}
+      {{ $rel := "" }}
+      {{ with $.Params.externalUrl }}
+        {{ $link = . }}
+        {{ $target = "_blank" }}
+        {{ $rel = "external noopener noreferrer" }}
+      {{ else }}
+        {{ $link = $.RelPermalink }}
+      {{ end }}
+      <a href="{{ $link }}" {{ with $target }}target="{{ . }}"{{ end }} {{ with $rel }}rel="{{ . }}"{{ end }}>
+        <img class="rounded-lg w-full h-auto object-cover shadow-md" src="{{ $img.RelPermalink }}" alt="{{ $.Title }}" loading="lazy" />
+      </a>
+    </div>
+    {{- end -}}
+
+  </div>
+</div>

@@ -8,7 +8,7 @@
 {{- partial "head.html" . -}}
 
 <body
-  class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32 scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
+  class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-wide bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32 scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
   <div id="particles-js" class="fixed inset-0 -z-10"></div> {{/* Added particles container */}}
   <div id="the-top" class="absolute flex self-center">
     <a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
@@ -34,6 +34,13 @@
     {{- partial "search.html" . -}}
     {{ end }}
   </div>
+  <div class="min-h-[148px]"></div>
+  <div class="fixed inset-x-0 min-h-[130px] opacity-65 pl-[24px] pr-[24px] bg-gradient-to-b from-neutral from-60% dark:from-neutral-800 to-transparent mix-blend-normal" style="z-index:80"></div>
+  <div class="fixed inset-x-0 pl-[24px] pr-[24px]" style="z-index:100">
+    <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl"></div>
+    <div class="relative max-w-wide ml-auto mr-auto">
+    </div>
+  </div>
   {{ $particlesJS := resources.Get "js/particles.js" }}
   {{ $particlesConfig := resources.Get "js/particles-config.js" }}
   {{ if and $particlesJS $particlesConfig }}
@@ -42,6 +49,13 @@
   {{ else }}
     {{ warnf "particles.js or particles-config.js not found in assets/js" }}
   {{ end }}
+  <script>
+    window.addEventListener('scroll', function (e) {
+      var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+      var background_blur = document.getElementById('menu-blur');
+      background_blur.style.opacity = (scroll / 200);
+    });
+  </script>
 </body>
 {{ if .Site.Params.buymeacoffee.globalWidget | default false }}
 <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"

@@ -12,4 +12,5 @@ showSummary : false
 sharingLinks : false
 groupByYear : false
 showZenMode : true
+# cardView: true
 ---

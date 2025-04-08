@@ -6,11 +6,8 @@ tags:
   - Data Science
   - Public Health
 date: "2023-08-07"
-
+showSummary: true
+showHero: true
 # Optional external URL for project (replaces project detail page).
-external_link: https://phdcourses.ku.dk/detailkursus.aspx?id=112103&sitepath=SUND
-
-image:
-  caption: ""
-  focal_point: Smart
+externalUrl: https://phdcourses.ku.dk/detailkursus.aspx?id=112103&sitepath=SUND
 ---
