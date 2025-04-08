@@ -1,3 +1,22 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://adrianzucco.com'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Adrian Zucco'
+theme = "blowfish"
+themeDir = 'themes/blowfish'
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\.json'
+    target = 'css'
+  [[build.cachebusters]]
+    source = '(postcss|tailwind)\.config\.js'
+    target = 'css'
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'

@@ -5,204 +5,193 @@
     <div class="fixed inset-x-0 top-0" style="z-index:-10">
       {{ $homepageImage := "" }}
       {{ with .Site.Params.defaultBackgroundImage }}
-      {{ if or (strings.HasPrefix . "http:") (strings.HasPrefix . "https:") }}
-      {{ $homepageImage = resources.GetRemote . }}
-      {{ else }}
-      {{ $homepageImage = resources.Get . }}
-      {{ end }}
+        {{ if or (strings.HasPrefix . "http:") (strings.HasPrefix . "https:") }}
+          {{ $homepageImage = resources.GetRemote . }}
+        {{ else }}
+          {{ $homepageImage = resources.Get . }}
+        {{ end }}
       {{ end }}
       {{ with .Site.Params.homepage.homepageImage }}
-      {{ if or (strings.HasPrefix . "http:") (strings.HasPrefix . "https:") }}
-      {{ $homepageImage = resources.GetRemote . }}
-      {{ else }}
-      {{ $homepageImage = resources.Get . }}
-      {{ end }}
+        {{ if or (strings.HasPrefix . "http:") (strings.HasPrefix . "https:") }}
+          {{ $homepageImage = resources.GetRemote . }}
+        {{ else }}
+          {{ $homepageImage = resources.Get . }}
+        {{ end }}
       {{ end }}
       {{ if $homepageImage }}
-      <img class="w-full h-[1000px] object-cover m-0 nozoom" src="{{ $homepageImage.RelPermalink }}" role="presentation"
-        style="margin: 0">
-      <div
-        class="absolute inset-0 h-[1000px] bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal">
-      </div>
-      <div
-        class="opacity-60 absolute inset-0 h-[1000px] bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral-100 dark:to-neutral-800 mix-blend-normal">
-      </div>
+        <img class="w-full h-[1000px] object-cover m-0 nozoom" src="{{ $homepageImage.RelPermalink }}" role="presentation" style="margin: 0">
+        <div class="absolute inset-0 h-[1000px] bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal"></div>
+        <div class="opacity-60 absolute inset-0 h-[1000px] bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral-100 dark:to-neutral-800 mix-blend-normal"></div>
       {{ end }}
     </div>
 
     <!-- Content Area -->
     <div class="container-fluid mx-auto px-4 sm:px-6 ">
       <div class="relative">
-        <!-- Two-column layout container -->
-        <div class="flex flex-col md:flex-row md:space-x-8 items-start">
+        <!-- Two-column layout container: Stacks on small, row on medium+ -->
+        <div class="flex flex-col md:flex-row md:space-x-8 items-start mb-16"> 
 
           <!-- Left column: Author image, info, and socials (Sticky) -->
-          <div class="md:w-1/3 flex flex-col items-center md:items-start mb-8 md:mb-0 md:sticky md:top-24">
+          <div class="w-full md:w-1/3 flex flex-col items-center md:items-start mb-8 md:mb-0 md:sticky md:top-24">
             {{ with .Site.Params.Author.image }}
-            {{ $authorImage := "" }}
-            {{ if or (strings.HasPrefix . "http:") (strings.HasPrefix . "https:") }}
-            {{ $authorImage = resources.GetRemote . }}
-            {{ else }}
-            {{ $authorImage = resources.Get . }}
-            {{ end }}
-            {{ if $authorImage }}
-            {{ if not $disableImageOptimization }}
-            {{ $authorImage = $authorImage.Fill (print "288x288 q" ( $.Site.Params.Author.imagequality | default "96" ))
-            }}
-            {{ end }}
-            <img class="mb-4 rounded-full h-48 w-48" width="192" height="192"
-              alt="{{ $.Site.Params.Author.name | default " Author" }}" src="{{ $authorImage.RelPermalink }}" />
-            {{ end }}
+              {{ $authorImage := "" }}
+              {{ if or (strings.HasPrefix . "http:") (strings.HasPrefix . "https:") }}
+                {{ $authorImage = resources.GetRemote . }}
+              {{ else }}
+                {{ $authorImage = resources.Get . }}
+              {{ end }}
+              {{ if $authorImage }}
+                {{ if not $disableImageOptimization }}
+                  {{ $authorImage = $authorImage.Fill (print "288x288 q" ( $.Site.Params.Author.imagequality | default "96" )) }}
+                {{ end }}
+                <img class="mb-4 rounded-full h-48 w-48" width="192" height="192" alt="{{ $.Site.Params.Author.name | default " Author" }}" src="{{ $authorImage.RelPermalink }}" />
+              {{ end }}
             {{ end }}
             <h1 class="mb-2 text-3xl font-extrabold text-neutral-800 dark:text-neutral-200 text-center md:text-left">
               {{ .Site.Params.Author.name | default .Site.Title }}
             </h1>
             {{ with .Site.Params.Author.headline }}
-            <h2 class="mt-0 mb-4 text-xl text-neutral-800 dark:text-neutral-300 text-center md:text-left">
-              {{ . | markdownify }}
-            </h2>
+              <h2 class="mt-0 mb-4 text-xl text-neutral-800 dark:text-neutral-300 text-center md:text-left">
+                {{ . | markdownify }}
+              </h2>
             {{ end }}
             {{ with .Site.Params.Author.location }}
-            <h3 class="mt-0 mb-4 text-xl text-secondary-800 dark:text-secondary-300 text-center md:text-left"></h3>
-              {{ . | markdownify }}
-            </h3>
+              <h3 class="mt-0 mb-4 text-xl text-secondary-800 dark:text-secondary-300 text-center md:text-left">
+                {{ . | markdownify }}
+              </h3>
             {{ end }}
             {{ with .Site.Params.Author.links }}
-            <div class="mt-3 mb-6 text-2xl">
-              <div class="flex flex-wrap">
-                {{ range $links := . }}
-                {{ range $name, $url := $links }}
-                <a class="mr-3 hover:text-primary-400 text-primary-800 dark:text-primary-800" href="{{ $url }}"
-                  target="_blank" aria-label="{{ $name | title }}" rel="me noopener noreferrer">{{ partial
-                  "icon.html" $name }}</a>
-                {{ end }}
-                {{ end }}
+              <div class="mt-3 mb-6 text-2xl">
+                <div class="flex flex-wrap justify-center md:justify-start">
+                  {{ range $links := . }}
+                    {{ range $name, $url := $links }}
+                      <a class="mr-3 hover:text-primary-400 text-primary-800 dark:text-primary-800" href="{{ $url }}" target="_blank" aria-label="{{ $name | title }}" rel="me noopener noreferrer">{{ partial "icon.html" $name }}</a>
+                    {{ end }}
+                  {{ end }}
+                </div>
               </div>
-            </div>
             {{ end }}
           </div> <!-- End Left Column -->
 
-          <!-- Right column: Main content and sections -->
-          <div class="md:w-2/3 w-full backdrop-blur-sm">
+          <!-- Right column: Bio -->
+          <div class="w-full md:w-2/3 backdrop-blur-sm"> 
             <!-- Main content from _index.md -->
-            <!-- Keep prose here for the main content -->
-            <section class="prose dark:prose-invert max-w-none mb-16">{{ .Content }}</section>
+            <section class="prose dark:prose-invert max-w-none"> 
+              {{ .Content }}
+            </section>
+          </div> <!-- End Right Column -->
 
-            <!-- Recent articles section -->
-            {{ if .Site.Params.homepage.showRecent | default false }}
+        </div> <!-- End Two-column layout container -->
+
+        <!-- Subsequent Sections Container -->
+        <div class="w-full"> 
+
+          <!-- Recent articles section -->
+          {{ if .Site.Params.homepage.showRecent | default false }}
             <section class="mb-20">
-              <h2 class="text-3xl font-bold mb-10">Projects</h2> <!-- Added heading for consistency -->
+              <h2 class="text-3xl font-bold mb-10">Projects</h2>
               {{ partial "recent-articles/main.html" . }}
             </section>
-            {{ end }}
+          {{ end }}
 
-            <!-- Publications section -->
-            <section class="mb-20">
-              <h2 class="text-3xl font-bold mb-10">Featured Publications</h2>
-              <div class="space-y-6">
-                {{ $publications := where site.RegularPages "Type" "publication" }}
-                {{ if $publications }}
+          <!-- Publications section -->
+          <section class="mb-20">
+            <h2 class="text-3xl font-bold mb-10">Featured Publications</h2>
+            <div class="space-y-6">
+              {{ $publications := where site.RegularPages "Type" "publication" }}
+              {{ if $publications }}
                 {{ range first 3 $publications }}
-                <div class="bg-neutral-100 dark:bg-black p-6 rounded-lg shadow-md transition-shadow hover:shadow-lg">
-                  <h3 class="text-xl font-bold mb-3">{{ .Title }}</h3>
-                  {{ with .Params.authors }}
-                  <p class="text-neutral-600 dark:text-neutral-400 mb-3">{{ . }}</p>
-                  {{ end }}
-                  <p class="text-neutral-700 dark:text-neutral-300 mb-4">{{ .Summary }}</p>
-                  <div class="flex flex-wrap gap-4">
-                    <a href="{{ .Permalink }}"
-                      class="text-primary-600 hover:text-primary-800 dark:hover:text-primary-400 font-medium">Read more
-                      →</a>
-                    {{ with .Params.doi }}
-                    <a href="https://doi.org/{{ . }}" target="_blank" rel="noopener"
-                      class="text-neutral-600 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-200 font-medium">DOI</a>
+                  <div class="bg-neutral-100 dark:bg-black p-6 rounded-lg shadow-md transition-shadow hover:shadow-lg">
+                    <h3 class="text-xl font-bold mb-3">{{ .Title }}</h3>
+                    {{ with .Params.authors }}
+                      <p class="text-neutral-600 dark:text-neutral-400 mb-3">{{ . }}</p>
                     {{ end }}
+                    <p class="text-neutral-700 dark:text-neutral-300 mb-4">{{ .Summary }}</p>
+                    <div class="flex flex-wrap gap-4">
+                      <a href="{{ .Permalink }}" class="text-primary-600 hover:text-primary-800 dark:hover:text-primary-400 font-medium">Read more →</a>
+                      {{ with .Params.doi }}
+                        <a href="https://doi.org/{{ . }}" target="_blank" rel="noopener" class="text-neutral-600 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-200 font-medium">DOI</a>
+                      {{ end }}
+                    </div>
                   </div>
-                </div>
                 {{ end }}
                 <div class="text-center mt-8">
-                  <a href="/publication/"
-                    class="inline-block px-5 py-2 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-md transition-colors">View
-                    all publications</a>
+                  <a href="/publication/" class="inline-block px-5 py-2 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-md transition-colors">View all publications</a>
                 </div>
-                {{ else }}
+              {{ else }}
                 <p class="text-neutral-600 dark:text-neutral-400">No publications found.</p>
-                {{ end }}
-              </div>
-            </section>
+              {{ end }}
+            </div>
+          </section>
 
-            <!-- Teaching section -->
-            <section class="mb-20">
-              <h2 class="text-3xl font-bold mb-10">Teaching</h2>
-              <div class="space-y-6">
+          <!-- Teaching section -->
+          <section class="mb-20">
+            <h2 class="text-3xl font-bold mb-10">Teaching</h2>
+            <div class="space-y-6">
               {{ $teaching := where site.RegularPages "Type" "teaching" }}
               {{ if $teaching }}
-              {{ range $teaching }}
-              <div
-                class="bg-neutral-100/80 dark:bg-black/60 p-6 rounded-lg shadow-md transition-shadow hover:shadow-lg backdrop-blur-sm">
-                <div class="flex flex-col md:flex-row">
-                <div class="md:w-2/3 md:pr-6">
-                  <h3 class="text-xl font-bold mb-3">
-                  <a href="{{ .Permalink }}" class="no-underline hover:underline transition-all duration-200 hover:text-primary-600 dark:hover:text-primary-400">{{ .Title }}</a>
-                  </h3>
-                  <p class="text-neutral-700 dark:text-neutral-300 mb-4">{{ .Summary }}</p>
-                  <!-- <a href="{{ .Permalink }}"
-                  class="text-primary-600 hover:text-primary-800 dark:hover:text-primary-400 font-medium">Learn
-                  more →</a> -->
-                </div>
-                {{ with .Params.image }}
-                {{ $img := "" }}
-                {{ if or (strings.HasPrefix . "http:") (strings.HasPrefix . "https:") }}
-                {{ $img = resources.GetRemote . }}
-                {{ else }}
-                {{ $img = resources.Get . }}
+                {{ range $teaching }}
+                  <div class="bg-neutral-100/80 dark:bg-black/60 p-6 rounded-lg shadow-md transition-shadow hover:shadow-lg backdrop-blur-sm">
+                    <div class="flex flex-col md:flex-row">
+                      <div class="md:w-2/3 md:pr-6">
+                        <h3 class="text-xl font-bold mb-3">
+                          <a href="{{ .Permalink }}" class="no-underline hover:underline transition-all duration-200 hover:text-primary-600 dark:hover:text-primary-400">{{ .Title }}</a>
+                        </h3>
+                        <p class="text-neutral-700 dark:text-neutral-300 mb-4">{{ .Summary }}</p>
+                      </div>
+                      {{ with .Params.image }}
+                        {{ $img := "" }}
+                        {{ if or (strings.HasPrefix . "http:") (strings.HasPrefix . "https:") }}
+                          {{ $img = resources.GetRemote . }}
+                        {{ else }}
+                          {{ $img = resources.Get . }}
+                        {{ end }}
+                        {{ if $img }}
+                          <div class="md:w-1/3 mt-4 md:mt-0">
+                            <img class="rounded-lg w-full h-auto object-cover" src="{{ $img.RelPermalink }}" alt="{{ $.Title }}" />
+                          </div>
+                        {{ end }}
+                      {{ end }}
+                    </div>
+                  </div>
                 {{ end }}
-                {{ if $img }}
-                <div class="md:w-1/3 mt-4 md:mt-0">
-                  <img class="rounded-lg w-full h-auto object-cover" src="{{ $img.RelPermalink }}"
-                  alt="{{ $.Title }}" />
-                </div>
-                {{ end }}
-                {{ end }}
-                </div>
-              </div>
-              {{ end }}
               {{ else }}
-              <p class="text-neutral-600 dark:text-neutral-400">No teaching entries found.</p>
+                <p class="text-neutral-600 dark:text-neutral-400">No teaching entries found.</p>
               {{ end }}
-              </div>
-            </section>
+            </div>
+          </section>
 
-            <!-- Interests section (Commented Out) -->
-            <!-- <section class="mb-20">
+          <!-- Interests section (Commented Out) -->
+          <!-- <section class="mb-20">
               <h2 class="text-3xl font-bold mb-10">Interests</h2>
-              <div class="prose dark:prose-invert max-w-3xl mx-auto">  <-- Example: Apply prose here if needed -->
-                <!-- <ul class="grid grid-cols-2 sm:grid-cols-3 gap-2">
+              <div class="prose dark:prose-invert max-w-3xl mx-auto">
+                <ul class="grid grid-cols-2 sm:grid-cols-3 gap-2">
                   <li>Explainable Machine Learning</li>
                   <li>Public Health</li>
                   <li>Complex Systems</li>
                   <li>Immunology</li>
                   <li>Cognitive Science</li>
                   <li>Philosophy</li>
-                </ul> -->
-              <!-- </div> -->
-            <!-- </section> -->
+                </ul>
+              </div>
+            </section> -->
 
-          </div> <!-- End Right Column -->
-        </div> <!-- End Two-column layout container -->
+        </div> <!-- End Subsequent Sections Container -->
+
       </div> <!-- End relative -->
     </div> <!-- End container-fluid -->
   </div> <!-- End relative -->
 </article>
+
 <!-- Background blur effect for the menu -->
 {{ if .Site.Params.homepage.layoutBackgroundBlur | default false }}
-<div id="background-blur" class="fixed opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl"></div>
-<script>
+  <div id="background-blur" class="fixed opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl"></div>
+  <script>
     window.addEventListener('scroll', function (e) {
-        var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-        var background_blur = document.getElementById('background-blur');
-        // Increased blur effect by lowering the divisor
-        background_blur.style.opacity = (scroll / 200);
+      var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+      var background_blur = document.getElementById('background-blur');
+      // Increased blur effect by lowering the divisor
+      background_blur.style.opacity = (scroll / 200);
     });
-</script>
+  </script>
 {{ end }}

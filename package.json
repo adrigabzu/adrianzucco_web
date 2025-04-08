@@ -1,0 +1,37 @@
+{
+  "name": "adrianzucco_web",
+  "version": "1.0.0",
+  "description": "Repository for my personal website available at adrianzucco.com",
+  "main": "index.js",
+  "scripts": {
+    "server": "hugo server -b http://localhost -p 8000",
+    "build:css": "NODE_ENV=development npx tailwindcss -c ./themes/blowfish/tailwind.config.js -i ./themes/blowfish/assets/css/main.css -o ./assets/css/compiled/main.css",
+    "watch:css": "NODE_ENV=development npx tailwindcss -c ./themes/blowfish/tailwind.config.js -i ./themes/blowfish/assets/css/main.css -o ./assets/css/compiled/main.css -w"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrigabzu/adrianzucco_web.git"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.0.7",
+    "@tailwindcss/typography": "^0.5.16",
+    "chart.js": "^4.4.8",
+    "fuse.js": "^7.1.0",
+    "jquery": "^3.7.1",
+    "katex": "^0.16.21",
+    "lite-youtube-embed": "^0.3.3",
+    "medium-zoom": "^1.1.0",
+    "mermaid": "^11.6.0",
+    "packery": "^3.0.0",
+    "prettier": "^3.5.3",
+    "prettier-plugin-go-template": "^0.0.15",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "puppeteer": "^24.4.0",
+    "rimraf": "^6.0.1",
+    "tailwind-scrollbar": "^4.0.1",
+    "tailwindcss": "^4.0.16",
+    "tw-elements": "2.0.0",
+    "typeit": "^8.8.7",
+    "vendor-copy": "^3.0.1"
+  }
+}
