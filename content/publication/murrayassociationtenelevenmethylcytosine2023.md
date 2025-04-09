@@ -17,6 +17,7 @@ authors:
 - "Borges, Álvaro H."
 - "Polizzotto, Mark N."
 - "Lundgren, Jens D."
+highlight_author: "Zucco, Adrian G."
 date: "2023-03-01"
 doi: "10.1097/QAD.0000000000003427"
 category: ["article-journal"]

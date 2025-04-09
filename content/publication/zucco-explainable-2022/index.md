@@ -2,7 +2,8 @@
 title: "Explainable Machine Learning for Precision Medicine of Patients with Infectious Diseases"
 draft: false
 authors:
-- "Zucco, Adrian Gabriel"
+- "Zucco, Adrian G."
+highlight_author: "Zucco, Adrian G."
 date: "2022-08-01"
 doi: "10.13140/RG.2.2.11403.57122"
 category: ["thesis"]

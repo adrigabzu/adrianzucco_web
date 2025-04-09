@@ -21,6 +21,7 @@ authors:
 - "Neaton, James D."
 - "Lane, H. Clifford"
 - "Lundgren, Jens D."
+highlight_author: "Zucco, Adrian G."
 date: "2019-09-01"
 doi: "10.1093/infdis/jiz294"
 category: ["article-journal"]

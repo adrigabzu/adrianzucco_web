@@ -5,7 +5,7 @@ authors:
 - Jeroen F. Uleman
 - Henning Johannes Drews
 - Naja Hulvej Rod
-highlight_author: "Zucco, Adrian G."
+highlight_author: "Adrian G. Zucco"
 # author_notes:
 # - "Equal contribution"
 # - "Equal contribution"

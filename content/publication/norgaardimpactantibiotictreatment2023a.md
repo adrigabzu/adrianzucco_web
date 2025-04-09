@@ -13,6 +13,7 @@ authors:
 - "Lundgren, Jens D"
 - "Sengeløv, Henrik"
 - "MacPherson, Cameron"
+highlight_author: "Zucco, Adrian Gabriel"
 date: "2023-07-01"
 doi: "10.1093/infdis/jiad033"
 category: ["article-journal"]

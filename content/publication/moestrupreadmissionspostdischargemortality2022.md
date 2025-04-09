@@ -13,6 +13,7 @@ authors:
 - "MacPherson, Cameron"
 - "Lundgren, Jens"
 - "Helleberg, Marie"
+highlight_author: "Zucco, Adrian G"
 date: "2022-08-01"
 doi: "10.1093/cid/ciac639"
 category: ["article-journal"]

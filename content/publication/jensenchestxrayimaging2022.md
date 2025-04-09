@@ -16,6 +16,7 @@ authors:
 - "Lundgren, Jens D."
 - "Helleberg, Marie"
 - "Moestrup, Kasper S."
+highlight_author: "Zucco, Adrian G."
 date: "2022-12-01"
 doi: "10.1038/s41598-022-25397-7"
 category: ["article-journal"]

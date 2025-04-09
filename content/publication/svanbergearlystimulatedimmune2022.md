@@ -27,6 +27,7 @@ authors:
 - "Helleberg, Marie"
 - "Niemann, Carsten Utoft"
 - "Ostrowski, Sisse Rye"
+highlight_author: "Zucco, Adrian"
 date: "2022-09-01"
 doi: "10.1038/s43856-022-00178-5"
 category: ["article-journal"]

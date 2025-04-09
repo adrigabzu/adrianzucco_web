@@ -20,6 +20,7 @@ authors:
 - "Lundgren, Jens D"
 - "Marvig, Rasmus L"
 - "INSIGHT START Study Group"
+highlight_author: "Zucco, Adrian G"
 date: "2021-12-01"
 doi: "10.1093/infdis/jiab253"
 category: ["article-journal"]

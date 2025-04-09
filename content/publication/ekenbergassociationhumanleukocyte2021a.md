@@ -14,6 +14,7 @@ authors:
 - "Neaton, James D."
 - "Lundgren, Jens D."
 - "for the INSIGHT START, SMART Study Groups"
+highlight_author: "Zucco, Adrian G."
 date: "2021-04-01"
 doi: "10.1097/QAD.0000000000002800"
 category: ["article-journal"]
