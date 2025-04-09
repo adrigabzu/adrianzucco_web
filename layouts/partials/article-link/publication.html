@@ -1,0 +1,171 @@
+{{/* ================================================================== */}}
+{{/*                  Parameter Configuration                         */}}
+{{/* ================================================================== */}}
+{{- $showSummary := .Params.showSummary | default (.Site.Params.list.showSummary | default true) -}}
+{{- $disableImageOptimization := .Page.Site.Params.disableImageOptimization | default false -}}
+
+{{/* ================================================================== */}}
+{{/*                  Get Featured Image Logic                        */}}
+{{/* ================================================================== */}}
+{{- $images := .Resources.ByType "image" -}}
+{{- $featured := $images.GetMatch "*feature*" -}}
+{{- if not $featured }}{{ $featured = $images.GetMatch "{*cover*,*thumbnail*}" }}{{ end -}}
+{{ if and .Params.featureimage (not $featured) }}
+  {{- $url:= .Params.featureimage -}}
+  {{ $featured = resources.GetRemote $url }}
+{{ end }}
+{{- if not $featured }}{{ with .Site.Params.defaultFeaturedImage }}{{ $featured = resources.Get . }}{{ end }}{{ end -}}
+{{ if .Params.hideFeatureImage }}{{ $featured = false }}{{ end }}
+
+{{/* ================================================================== */}}
+{{/*                  Determine Link Properties                       */}}
+{{/* ================================================================== */}}
+{{ $link := "" }}
+{{ $target := "" }}
+{{ $rel := "" }}
+{{ with .Params.externalUrl }}
+  {{ $link = . }}
+  {{ $target = "_blank" }}
+  {{ $rel = "external noopener noreferrer" }}
+{{ else }}
+  {{ $link = .RelPermalink }}
+{{ end }}
+
+{{/* ================================================================== */}}
+{{/*                  Main Link Container                             */}}
+{{/* ================================================================== */}}
+<div class="mb-6">
+  {{/* Card-like container with horizontal layout */}}
+  <div
+    class="flex flex-col md:flex-row w-full rounded-lg shadow-md transition-shadow duration-300 ease-in-out hover:shadow-xl dark:hover:shadow-[0_0_20px_0px_rgba(255,255,255,0.15)] overflow-hidden backdrop-blur-sm border border-neutral-200 dark:border-neutral-700 items-stretch md:items-center" {{/* Changed to items-stretch for col, items-center for row */}}
+  >
+    {{/* ================================================================== */}}
+    {{/*                  Left Column: Text Content                       */}}
+    {{/* ================================================================== */}}
+    <div
+      class="p-6 w-full flex-shrink-0 {{ if $featured }} md:w-4/5 {{ else }}w-full{{ end }}" {{/* Added w-full and flex-shrink-0 for base */}}
+    >
+      {{/* --- Title --- */}}
+      <h3
+        class="text-xl font-bold mb-1 text-neutral-800 dark:text-neutral transition-colors duration-300"
+      >
+        <a
+          href="{{ $link }}"
+          {{ with $target }}target="{{ . }}"{{ end }}
+          {{ with $rel }}rel="{{ . }}"{{ end }}
+          class="hover:text-primary-600 dark:hover:text-primary-400"
+        >
+          {{ .Title | emojify }}
+          {{ with .Params.externalUrl }}
+            <span
+              class="text-xs align-top cursor-default text-neutral-400 dark:text-neutral-500"
+            >
+              <span class="rtl:hidden">&#8599;</span>
+              <span class="ltr:hidden">&#8598;</span>
+            </span>
+          {{ end }}
+        </a>
+        {{ if and .Draft .Site.Params.article.showDraftLabel }}
+          <span class="ml-2 rtl:mr-2 align-middle text-xs"
+            >{{ partial "badge.html" (i18n "article.draft" | emojify) }}</span
+          >
+        {{ end }}
+      </h3>
+
+      {{/* --- Authors --- */}}
+      {{ with .Params.authors }}
+        <div class="text-sm text-neutral-600 dark:text-neutral-400 mb-1">
+          {{ $highlightAuthor := $.Params.highlight_author | default "" }}
+          {{ $authorCount := len . }}
+          {{ range $index, $author := . }}
+            {{- if and $highlightAuthor (eq $author $highlightAuthor) -}}
+              <strong class="font-semibold text-neutral-700 dark:text-neutral-200">{{ $author }}</strong>
+            {{- else -}}
+              {{ $author }}
+            {{- end -}}
+            {{- if lt $index (sub $authorCount 1) }}, {{ end -}}
+          {{ end }}
+        </div>
+      {{ end }}
+
+      {{/* --- Journal / Publication Info --- */}}
+      {{ with .Params.journal }}
+        <div class="text-sm text-neutral-500 dark:text-neutral-500 mb-1 italic"> {{/* Adjusted margin */}}
+          {{ . }}
+        </div>
+      {{ end }}
+
+      {{/* --- DOI Link (New Section - Icon Only) --- */}}
+      {{ with .Params.doi }}
+        <div class="text-sm mb-3"> {{/* Container for DOI link */}}
+          <a
+            href="https://doi.org/{{ . }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-primary-600 dark:text-primary-400 hover:opacity-80 transition-opacity" {{/* Adjusted classes for icon link */}}
+            title="View DOI: {{ . }}"
+            aria-label="DOI Link" {{/* Accessibility for icon-only link */}}
+          >
+            {{/* Font Awesome Link Icon - Ensure FA is loaded in your project */}}
+            <i class="fa-solid fa-link fa-fw"></i> {{/* Using fa-solid fa-link. Adjust if using a different FA style/version. fa-fw ensures fixed width. */}}
+          </a>
+        </div>
+      {{ end }}
+
+      {{/* --- Date/Meta (Optional - Keep if needed) --- */}}
+      {{/*
+      <div class="text-sm text-neutral-500 dark:text-neutral-400 mb-3">
+        {{ partial "article-meta/basic.html" . }}
+      </div>
+      */}}
+
+      <!-- {{/* --- Full Summary --- */}}
+      {{ if and $showSummary .Summary }}
+        <div class="prose dark:prose-invert max-w-none text-md text-neutral-700 dark:text-neutral-300 mt-3">
+          {{/* Use RenderString if summary contains markdown, otherwise just output .Summary */}}
+          {{ .Summary | $.Page.RenderString }}
+        </div>
+      {{ end }} -->
+
+    </div>
+
+    {{/* ================================================================== */}}
+    {{/*                  Right Column: Image                           */}}
+    {{/* ================================================================== */}}
+    {{- with $featured -}}
+      <div
+        class="w-full md:w-1/5 flex-shrink-0 p-4 md:py-4 md:pr-4 md:pl-0 flex justify-center items-center" {{/* Removed md:justify-end, ensured w-full and flex-shrink-0 */}}
+      >
+        {{ $img := . }} {{/* Assign original image to $img */}}
+        {{ if not $disableImageOptimization }}
+          {{/* --- Start Image Processing Logic --- */}}
+          {{ $originalWidth := $img.Width }}
+          {{ $originalHeight := $img.Height }}
+
+          {{ if eq $originalWidth $originalHeight }}
+            {{/* If image is square, resize to 200x200 */}}
+            {{ $img = $img.Resize "200x200" }}
+          {{ else }}
+            {{/* If image is not square, resize height to 200px, keep aspect ratio */}}
+            {{ $img = $img.Resize "x200" }}
+          {{ end }}
+          {{/* --- End Image Processing Logic --- */}}
+        {{ end }}
+        <a
+          href="{{ $link }}"
+          {{ with $target }}target="{{ . }}"{{ end }}
+          {{ with $rel }}rel="{{ . }}"{{ end }}
+        >
+          <img
+            class="rounded-md w-auto h-auto max-w-[200px] max-h-[200px] shadow-md" {{/* Removed object-cover */}}
+            src="{{ $img.RelPermalink }}"
+            alt="{{ $.Title }}"
+            loading="lazy"
+            width="{{ $img.Width }}"
+            height="{{ $img.Height }}"
+          />
+        </a>
+      </div>
+    {{- end -}}
+  </div>
+</div>

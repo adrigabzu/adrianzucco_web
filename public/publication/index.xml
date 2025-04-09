@@ -22,73 +22,63 @@
     </item>
     
     <item>
-      <title>Associations of functional human leucocyte antigen class I groups with HIV viral load in a heterogeneous cohort</title>
+      <title>Associations of Functional Human Leucocyte Antigen Class I Groups with HIV Viral Load in a Heterogeneous Cohort</title>
       <link>http://localhost:1313/publication/zucco-associations-2023/</link>
       <pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate>
       <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
       <guid>http://localhost:1313/publication/zucco-associations-2023/</guid>
-      <description></description>
+      <description>Objective:~           Human leucocyte antigen (HLA) class I alleles are the main host genetic factors involved in controlling HIV-1 viral load (VL). Nevertheless, HLA diversity has proven a significant challenge in association studies. We assessed how accounting for binding affinities of HLA class I alleles to HIV-1 peptides facilitate association testing of HLA with HIV-1 VL in a heterogeneous cohort.           Design:~           Cohort from the Strategic Timing of AntiRetroviral Treatment (START) study.           Methods:~           We imputed HLA class I alleles from host genetic data (2546 HIV+ participants) and sampled immunopeptidomes from 2079 host-paired viral genomes (targeted amplicon sequencing). We predicted HLA class I binding affinities to HIV-1 and unspecific peptides, grouping alleles into functional clusters through consensus clustering. These functional HLA class I clusters were used to test associations with HIV VL.           Results:~           We identified four clades totaling 30 HLA alleles accounting for 11.4% variability in VL. We highlight HLA-B$&lt;em&gt;$57:01 and B$&lt;/em&gt;$57:03 as functionally similar but yet overrepresented in distinct ethnic groups, showing when combined a protective association with HIV+ VL (log, $β$ -0.25; adj. P-value $&amp;lt;$ 0.05). We further demonstrate only a slight power reduction when using unspecific immunopeptidomes, facilitating the use of the inferred functional HLA groups in other studies           Conclusion:~           The outlined computational approach provides a robust and efficient way to incorporate HLA function and peptide diversity, aiding clinical association studies in heterogeneous cohorts. To facilitate access to the proposed methods and results we provide an interactive application for exploring data.</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/publication/zucco-associations-2023/featured.png" />
     </item>
     
     <item>
       <title>Metabolic Profiling Early Post-Allogeneic Haematopoietic Cell Transplantation in the Context of CMV Infection</title>
-      <link>http://localhost:1313/publication/rasmussen-metabolic-2023/</link>
+      <link>http://localhost:1313/publication/rasmussenmetabolicprofilingearly2023/</link>
       <pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate>
       <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
-      <guid>http://localhost:1313/publication/rasmussen-metabolic-2023/</guid>
-      <description></description>
+      <guid>http://localhost:1313/publication/rasmussenmetabolicprofilingearly2023/</guid>
+      <description>Immune dysfunction resulting from allogeneic haematopoietic stem cell transplantation (aHSCT) predisposes one to an elevated risk of cytomegalovirus (CMV) infection. Changes in metabolism have been associated with adverse outcomes, and in this study, we explored the associations between metabolic profiles and post-transplantation CMV infection using plasma samples collected 7&amp;ndash;33 days after aHSCT. We included 68 aHSCT recipients from Rigshospitalet, Denmark, 50% of whom experienced CMV infection between days 34&amp;ndash;100 post-transplantation. First, we investigated whether 12 metabolites selected based on the literature were associated with an increased risk of post-transplantation CMV infection. Second, we conducted an exploratory network-based analysis of the complete metabolic and lipidomic profiles in relation to clinical phenotypes and biological pathways. Lower levels of trimethylamine N-oxide were associated with subsequent CMV infection (multivariable logistic regression: OR = 0.63; 95% CI = [0.41; 0.87]; p = 0.01). Explorative analysis revealed 12 clusters of metabolites or lipids, among which one was predictive of CMV infection, and the others were associated with conditioning regimens, age upon aHSCT, CMV serostatus, and/or sex. Our results provide evidence for an association between the metabolome and CMV infection post-aHSCT that is independent of known risk factors.</description>
       
     </item>
     
     <item>
-      <title>Association between ten-eleven methylcytosine dioxygenase 2 genetic variation and viral load in people with HIV</title>
-      <link>http://localhost:1313/publication/murray-association-2023/</link>
+      <title>Impact of Antibiotic Treatment on the Gut Microbiome and Its Resistome in Hematopoietic Stem Cell Transplant Recipients</title>
+      <link>http://localhost:1313/publication/norgaardimpactantibiotictreatment2023a/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/publication/norgaardimpactantibiotictreatment2023a/</guid>
+      <description>Antibiotic-resistant bacterial infections are increasingly an issue in allogenic hematopoietic stem cell transplant patients. How antibiotic treatment impacts antibiotic resistance in the human gut microbiome remains poorly understood in vivo. Here, a total of 577 fecal samples from 233 heavily antibiotic-treated transplant patients were examined using high-resolution prescription data and shotgun metagenomics. The 13 most frequently used antibiotics were significantly associated with 154 (40% of tested associations) microbiome features. Use of broad-spectrum $β$-lactam antibiotics was most markedly associated with microbial disruption and increase in resistome features. The enterococcal vanA gene was positively associated with 8 of the 13 antibiotics, and in particular piperacillin/tazobactam and vancomycin. Here, we highlight the need for a high-resolution approach in understanding the development of antibiotic resistance in the gut microbiome. Our findings can be used to inform antibiotic stewardship and combat the increasing threat of antibiotic resistance.</description>
+      
+    </item>
+    
+    <item>
+      <title>Association between Ten-Eleven Methylcytosine Dioxygenase 2 Genetic Variation and Viral Load in People with HIV</title>
+      <link>http://localhost:1313/publication/murrayassociationtenelevenmethylcytosine2023/</link>
       <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
       <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
-      <guid>http://localhost:1313/publication/murray-association-2023/</guid>
-      <description></description>
+      <guid>http://localhost:1313/publication/murrayassociationtenelevenmethylcytosine2023/</guid>
+      <description>Introduction:~         Identifying genetic factors that influence HIV-pathogenesis is critical for understanding disease pathways. Previous studies have suggested a role for the human gene ten-eleven methylcytosine dioxygenase 2 (TET2) in modulating HIV-pathogenesis.         Methods:~         We assessed whether genetic variation in TET2 was associated with markers of HIV-pathogenesis using both gene level and single nucleotide polymorphism (SNP) level association in 8512 HIV-positive persons across five clinical trial cohorts.         Results:~         Variation at both the gene and SNP-level of TET2 was found to be associated with levels of HIV viral load (HIV-VL) consistently in the two cohorts that recruited antiretroviral-naïve participants. The SNPs occurred in two clusters of high linkage disequilibrium (LD), one associated with high HIV-VL and the other low HIV-VL, and were predominantly found in Black participants.         Conclusion:~         Genetic variation in TET2 was associated with HIV-VL in two large antiretroviral therapy (ART)-naive clinical trial cohorts. The role of TET2 in HIV-pathogenesis warrants further investigation.</description>
       
     </item>
     
     <item>
-      <title>Impact of Antibiotic Treatment on the Gut Microbiome and its Resistome in Hematopoietic Stem Cell Transplant Recipients</title>
-      <link>http://localhost:1313/publication/norgaard-impact-2023/</link>
-      <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
-      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
-      <guid>http://localhost:1313/publication/norgaard-impact-2023/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Chest x-ray imaging score is associated with severity of COVID-19 pneumonia: the MBrixia score</title>
-      <link>http://localhost:1313/publication/jensen-chest-2022/</link>
+      <title>Chest X-Ray Imaging Score Is Associated with Severity of COVID-19 Pneumonia: The MBrixia Score</title>
+      <link>http://localhost:1313/publication/jensenchestxrayimaging2022/</link>
       <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
       <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
-      <guid>http://localhost:1313/publication/jensen-chest-2022/</guid>
-      <description></description>
+      <guid>http://localhost:1313/publication/jensenchestxrayimaging2022/</guid>
+      <description>Spatial resolution in existing chest x-ray (CXR)-based scoring systems for coronavirus disease 2019 (COVID-19) pneumonia is low, and should be increased for better representation of anatomy, and severity of lung involvement. An existing CXR-based system, the Brixia score, was modified to increase the spatial resolution, creating the MBrixia score. The MBrixia score is the sum, of a rule-based quantification of CXR severity on a scale of 0 to 3 in 12 anatomical zones in the lungs. The MBrixia score was applied to CXR images from COVID-19 patients at a single tertiary hospital in the period May 4th&amp;ndash;June 5th, 2020. The relationship between MBrixia score, and level of respiratory support at the time of performed CXR imaging was investigated. 37 hospitalized COVID-19 patients with 290 CXRs were identified, 22 (59.5%) were admitted to the intensive care unit and 10 (27%) died during follow-up. In a Poisson regression using all 290 MBrixia scored CXRs, a higher MBrixia score was associated with a higher level of respiratory support at the time of performed CXR. The MBrixia score could potentially be valuable as a quantitative surrogate measurement of COVID-19 pneumonia severity, and future studies should investigate the score&amp;rsquo;s validity and capabilities of predicting clinical outcomes.</description>
       
     </item>
     
     <item>
-      <title>Early stimulated immune responses predict clinical disease severity in hospitalized COVID-19 patients</title>
-      <link>http://localhost:1313/publication/svanberg-early-2022/</link>
+      <title>Early Stimulated Immune Responses Predict Clinical Disease Severity in Hospitalized COVID-19 Patients</title>
+      <link>http://localhost:1313/publication/svanbergearlystimulatedimmune2022/</link>
       <pubDate>Thu, 01 Sep 2022 00:00:00 +0000</pubDate>
       <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
-      <guid>http://localhost:1313/publication/svanberg-early-2022/</guid>
-      <description></description>
+      <guid>http://localhost:1313/publication/svanbergearlystimulatedimmune2022/</guid>
+      <description>The immune pathogenesis underlying the diverse clinical course of COVID-19 is poorly understood. Currently, there is an unmet need in daily clinical practice for early biomarkers and improved risk stratification tools to help identify and monitor COVID-19 patients at risk of severe disease.</description>
       
-    </item>
-    
-    <item>
-      <title>Personalized survival probabilities for SARS-CoV-2 positive patients by explainable machine learning</title>
-      <link>http://localhost:1313/publication/xai_sarscov2/</link>
-      <pubDate>Tue, 16 Aug 2022 00:00:00 +0000</pubDate>
-      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
-      <guid>http://localhost:1313/publication/xai_sarscov2/</guid>
-      <description>Interpretable risk assessment of SARS-CoV-2 positive patients can aid clinicians to implement precision medicine. Here we trained a machine learning model to predict mortality within 12 weeks of a first positive SARS-CoV-2 test. By leveraging data on 33,938 confirmed SARS-CoV-2 cases in eastern Denmark, we considered 2723 variables extracted from electronic health records (EHR) including demographics, diagnoses, medications, laboratory test results and vital parameters. A discrete-time framework for survival modelling enabled us to predict personalized survival curves and explain individual risk factors. Performance on the test set was measured with a weighted concordance index of 0.95 and an area under the curve for precision-recall of 0.71. Age, sex, number of medications, previous hospitalizations and lymphocyte counts were identified as top mortality risk factors. Our explainable survival model developed on EHR data also revealed temporal dynamics of the 22 selected risk factors. Upon further validation, this model may allow direct reporting of personalized survival probabilities in routine care.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/publication/xai_sarscov2/featured.png" />
     </item>
     
     <item>
@@ -97,37 +87,57 @@
       <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
       <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
       <guid>http://localhost:1313/publication/zucco-explainable-2022/</guid>
-      <description></description>
+      <description>This thesis aims to present Machine Learning applications for the development of precision medicine in patients with infectious diseases. This is outlined by proposing computational solutions to two major challenges in precision medicine: how to infer relevant host genetic factors in heterogeneous populations (Study I) and how to predict patient-specific risk while accounting for censored individuals (Study II). For both challenges, the implemented models are explained based on domain knowledge of biological systems and disease aetiology supported by methods of model interpretability. This corresponds to the secondary aim of developing not only predictive models but also deepening the understanding of HIV host genomics and SARS-CoV-2 risk factors respectively. The specific objectives of each study were:  Study I – Associations of functional HLA class I groups with HIV viral load in a heterogeneous cohort. To assess if functional clustering of the main host genetic factors involved in HIV control, Human Leukocyte Antigen alleles, based on predicted binding affinities to HIV peptides facilitate the study of HLA alleles in demographically heterogeneous cohorts.  Study II – Personalized survival probabilities for SARS-CoV-2 positive patients by explainable machine learning. To implement survival machine learning models for predicting personalized 12-week mortality of SARS-CoV-2 positive patients by leveraging electronic health records and describing temporal dynamics of relevant risk factors through model explainability.</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/publication/zucco-explainable-2022/featured.png" />
     </item>
     
     <item>
-      <title>Readmissions, Postdischarge Mortality, and Sustained Recovery Among Patients Admitted to Hospital With Coronavirus Disease 2019 (COVID-19)</title>
-      <link>http://localhost:1313/publication/moestrup-readmissions-2022/</link>
+      <title>Personalized Survival Probabilities for SARS-CoV-2 Positive Patients by Explainable Machine Learning</title>
+      <link>http://localhost:1313/publication/xai_sarscov2/</link>
       <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
       <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
-      <guid>http://localhost:1313/publication/moestrup-readmissions-2022/</guid>
-      <description></description>
+      <guid>http://localhost:1313/publication/xai_sarscov2/</guid>
+      <description>Interpretable risk assessment of SARS-CoV-2 positive patients can aid clinicians to implement precision medicine. Here we trained a machine learning model to predict mortality within 12~weeks of a first positive SARS-CoV-2 test. By leveraging data on 33,938 confirmed SARS-CoV-2 cases in eastern Denmark, we considered 2723 variables extracted from electronic health records (EHR) including demographics, diagnoses, medications, laboratory test results and vital parameters. A discrete-time framework for survival modelling enabled us to predict personalized survival curves and explain individual risk factors. Performance on the test set was measured with a weighted concordance index of 0.95 and an area under the curve for precision-recall of 0.71. Age, sex, number of medications, previous hospitalizations and lymphocyte counts were identified as top mortality risk factors. Our explainable survival model developed on EHR data also revealed temporal dynamics of the 22 selected risk factors. Upon further validation, this model may allow direct reporting of personalized survival probabilities in routine care.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/publication/xai_sarscov2/featured.png" />
+    </item>
+    
+    <item>
+      <title>Readmissions, Postdischarge Mortality, and Sustained Recovery Among Patients Admitted to Hospital With Coronavirus Disease 2019 (COVID-19)</title>
+      <link>http://localhost:1313/publication/moestrupreadmissionspostdischargemortality2022/</link>
+      <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/publication/moestrupreadmissionspostdischargemortality2022/</guid>
+      <description>Many interventional in-patient coronavirus disease 2019 (COVID-19) trials assess primary outcomes through day 28 post-randomization. Since a proportion of patients experience protracted disease or relapse, such follow-up period may not fully capture the course of the disease, even when randomization occurs a few days after hospitalization.Among adults hospitalized with COVID-19 in eastern Denmark from 18 March 2020&amp;ndash;12 January 2021 we assessed all-cause mortality, recovery, and sustained recovery 90 days after admission, and readmission and all-cause mortality 90 days after discharge. Recovery was defined as hospital discharge and sustained recovery as recovery and alive without readmissions for 14 consecutive days.Among 3386 patients included in the study, 2796 (82.6%) reached recovery and 2600 (77.0%) achieved sustained recovery. Of those discharged from hospital, 556 (19.9%) were readmitted and 289 (10.3%) died. Overall, the median time to recovery was 6 days (interquartile range [IQR]: 3&amp;ndash;10), and 19 days (IQR: 11&amp;ndash;33) among patients in intensive care in the first 2 days of admission.Postdischarge readmission and mortality rates were substantial. Therefore, sustained recovery should be favored to recovery outcomes in clinical COVID-19 trials. A 28-day follow-up period may be too short for the critically ill.</description>
       
     </item>
     
     <item>
       <title>Human Immunotypes Impose Selection on Viral Genotypes Through Viral Epitope Specificity</title>
-      <link>http://localhost:1313/publication/gabrielaite-human-2021/</link>
+      <link>http://localhost:1313/publication/gabrielaitehumanimmunotypesimpose2021b/</link>
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
       <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
-      <guid>http://localhost:1313/publication/gabrielaite-human-2021/</guid>
-      <description></description>
+      <guid>http://localhost:1313/publication/gabrielaitehumanimmunotypesimpose2021b/</guid>
+      <description>To cite this publication, please use the following BibTeX entry:</description>
       
     </item>
     
     <item>
-      <title>The association of human leukocyte antigen alleles with clinical disease progression in HIV-positive cohorts with varied treatment strategies</title>
-      <link>http://localhost:1313/publication/ekenberg-association-2021/</link>
+      <title>The Association of Human Leukocyte Antigen Alleles with Clinical Disease Progression in HIV-positive Cohorts with Varied Treatment Strategies</title>
+      <link>http://localhost:1313/publication/ekenbergassociationhumanleukocyte2021a/</link>
       <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
       <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
-      <guid>http://localhost:1313/publication/ekenberg-association-2021/</guid>
-      <description></description>
+      <guid>http://localhost:1313/publication/ekenbergassociationhumanleukocyte2021a/</guid>
+      <description>Objectives:~         The Strategic Timing of AntiRetroviral Treatment (START) and Strategies for Management of Antiretroviral Therapy (SMART) trials demonstrated that ART can partly reverse clinically defined immune dysfunction induced by HIV replication. As control of HIV replication is influenced by the HLA region, we explored whether HLA alleles independently influence the risk of clinical events in HIV+ individuals.         Design:~         Cohort study.         Methods:~         In START and SMART participants, associations between imputed HLA alleles and AIDS, infection-related cancer, herpes virus-related AIDS events, chronic inflammation-related conditions, and bacterial pneumonia were assessed. Cox regression was used to estimate hazard ratios for the risk of events among allele carriers versus noncarriers. Models were adjusted for sex, age, geography, race, time-updated CD4+ T-cell counts and HIV viral load and stratified by treatment group within trials. HLA class I and II alleles were analyzed separately. The Benjamini&amp;ndash;Hochberg procedure was used to limit the false discovery rate to less than 5% (i.e. q value $&amp;lt;$0.05).         Results:~         Among 4829 participants, there were 132 AIDS events, 136 chronic inflammation-related conditions, 167 bacterial pneumonias, 45 infection-related cancers, and 49 herpes virus-related AIDS events. Several associations with q value less than 0.05 were found: HLA-DQB1$&lt;em&gt;$06:04 and HLA-DRB1$&lt;/em&gt;$13:02 with AIDS (adjusted HR [95% CI] 2.63 [1.5&amp;ndash;4.6] and 2.25 [1.4&amp;ndash;3.7], respectively), HLA-B$&lt;em&gt;$15:17 and HLA-DPB1$&lt;/em&gt;$15:01 with bacterial pneumonia (4.93 [2.3&amp;ndash;10.7] and 4.33 [2.0&amp;ndash;9.3], respectively), and HLA-A$*$69:01 with infection-related cancer (15.26 [3.5&amp;ndash;66.7]). The carriage frequencies of these alleles were 10% or less.         Conclusion:~         This hypothesis-generating study suggests that certain HLA alleles may influence the risk of immune dysfunction-related events irrespective of viral load and CD4+ T-cell count.</description>
+      
+    </item>
+    
+    <item>
+      <title>Association Between Single-Nucleotide Polymorphisms in HLA Alleles and Human Immunodeficiency Virus Type 1 Viral Load in Demographically Diverse, Antiretroviral Therapy--Naive Participants From the Strategic Timing of AntiRetroviral Treatment Trial</title>
+      <link>http://localhost:1313/publication/ekenbergassociationsinglenucleotidepolymorphisms2019/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/publication/ekenbergassociationsinglenucleotidepolymorphisms2019/</guid>
+      <description>``To investigate the impact of host genetics on human immunodeficiency virus type 1 control among individuals of different ancestry, we performed genome-wide ass</description>
       
     </item>
     

@@ -13,5 +13,6 @@ showSummary : true
 sharingLinks : false
 groupByYear : true
 showZenMode : true
-# cardView: true
+cardView: false
+layout: publication_list
 ---

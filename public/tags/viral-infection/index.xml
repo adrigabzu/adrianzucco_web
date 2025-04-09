@@ -12,23 +12,33 @@
     <lastBuildDate>Thu, 01 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/viral-infection/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Chest x-ray imaging score is associated with severity of COVID-19 pneumonia: the MBrixia score</title>
-      <link>http://localhost:1313/publication/jensen-chest-2022/</link>
+      <title>Chest X-Ray Imaging Score Is Associated with Severity of COVID-19 Pneumonia: The MBrixia Score</title>
+      <link>http://localhost:1313/publication/jensenchestxrayimaging2022/</link>
       <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
       <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
-      <guid>http://localhost:1313/publication/jensen-chest-2022/</guid>
-      <description></description>
+      <guid>http://localhost:1313/publication/jensenchestxrayimaging2022/</guid>
+      <description>Spatial resolution in existing chest x-ray (CXR)-based scoring systems for coronavirus disease 2019 (COVID-19) pneumonia is low, and should be increased for better representation of anatomy, and severity of lung involvement. An existing CXR-based system, the Brixia score, was modified to increase the spatial resolution, creating the MBrixia score. The MBrixia score is the sum, of a rule-based quantification of CXR severity on a scale of 0 to 3 in 12 anatomical zones in the lungs. The MBrixia score was applied to CXR images from COVID-19 patients at a single tertiary hospital in the period May 4th&amp;ndash;June 5th, 2020. The relationship between MBrixia score, and level of respiratory support at the time of performed CXR imaging was investigated. 37 hospitalized COVID-19 patients with 290 CXRs were identified, 22 (59.5%) were admitted to the intensive care unit and 10 (27%) died during follow-up. In a Poisson regression using all 290 MBrixia scored CXRs, a higher MBrixia score was associated with a higher level of respiratory support at the time of performed CXR. The MBrixia score could potentially be valuable as a quantitative surrogate measurement of COVID-19 pneumonia severity, and future studies should investigate the score&amp;rsquo;s validity and capabilities of predicting clinical outcomes.</description>
       
     </item>
     
     <item>
-      <title>Early stimulated immune responses predict clinical disease severity in hospitalized COVID-19 patients</title>
-      <link>http://localhost:1313/publication/svanberg-early-2022/</link>
+      <title>Early Stimulated Immune Responses Predict Clinical Disease Severity in Hospitalized COVID-19 Patients</title>
+      <link>http://localhost:1313/publication/svanbergearlystimulatedimmune2022/</link>
       <pubDate>Thu, 01 Sep 2022 00:00:00 +0000</pubDate>
       <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
-      <guid>http://localhost:1313/publication/svanberg-early-2022/</guid>
-      <description></description>
+      <guid>http://localhost:1313/publication/svanbergearlystimulatedimmune2022/</guid>
+      <description>The immune pathogenesis underlying the diverse clinical course of COVID-19 is poorly understood. Currently, there is an unmet need in daily clinical practice for early biomarkers and improved risk stratification tools to help identify and monitor COVID-19 patients at risk of severe disease.</description>
       
+    </item>
+    
+    <item>
+      <title>Personalized Survival Probabilities for SARS-CoV-2 Positive Patients by Explainable Machine Learning</title>
+      <link>http://localhost:1313/publication/xai_sarscov2/</link>
+      <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/publication/xai_sarscov2/</guid>
+      <description>Interpretable risk assessment of SARS-CoV-2 positive patients can aid clinicians to implement precision medicine. Here we trained a machine learning model to predict mortality within 12~weeks of a first positive SARS-CoV-2 test. By leveraging data on 33,938 confirmed SARS-CoV-2 cases in eastern Denmark, we considered 2723 variables extracted from electronic health records (EHR) including demographics, diagnoses, medications, laboratory test results and vital parameters. A discrete-time framework for survival modelling enabled us to predict personalized survival curves and explain individual risk factors. Performance on the test set was measured with a weighted concordance index of 0.95 and an area under the curve for precision-recall of 0.71. Age, sex, number of medications, previous hospitalizations and lymphocyte counts were identified as top mortality risk factors. Our explainable survival model developed on EHR data also revealed temporal dynamics of the 22 selected risk factors. Upon further validation, this model may allow direct reporting of personalized survival probabilities in routine care.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/publication/xai_sarscov2/featured.png" />
     </item>
     
   </channel>

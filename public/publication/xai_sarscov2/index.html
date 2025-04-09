@@ -8,11 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>Personalized survival probabilities for SARS-CoV-2 positive patients by explainable machine learning &middot; Adrian G. Zucco</title>
-  <meta name="title" content="Personalized survival probabilities for SARS-CoV-2 positive patients by explainable machine learning &middot; Adrian G. Zucco" />
+  <title>Personalized Survival Probabilities for SARS-CoV-2 Positive Patients by Explainable Machine Learning &middot; Adrian G. Zucco</title>
+  <meta name="title" content="Personalized Survival Probabilities for SARS-CoV-2 Positive Patients by Explainable Machine Learning &middot; Adrian G. Zucco" />
   
-  <meta name="description" content="Interpretable risk assessment of SARS-CoV-2 positive patients can aid clinicians to implement precision medicine. Here we trained a machine learning model to predict mortality within 12 weeks of a first positive SARS-CoV-2 test. By leveraging data on 33,938 confirmed SARS-CoV-2 cases in eastern Denmark, we considered 2723 variables extracted from electronic health records (EHR) including demographics, diagnoses, medications, laboratory test results and vital parameters. A discrete-time framework for survival modelling enabled us to predict personalized survival curves and explain individual risk factors. Performance on the test set was measured with a weighted concordance index of 0.95 and an area under the curve for precision-recall of 0.71. Age, sex, number of medications, previous hospitalizations and lymphocyte counts were identified as top mortality risk factors. Our explainable survival model developed on EHR data also revealed temporal dynamics of the 22 selected risk factors. Upon further validation, this model may allow direct reporting of personalized survival probabilities in routine care." />
-  <meta name="keywords" content="xAI, Infectious diseases, " />
+  <meta name="description" content="Interpretable risk assessment of SARS-CoV-2 positive patients can aid clinicians to implement precision medicine. Here we trained a machine learning model to predict mortality within 12~weeks of a first positive SARS-CoV-2 test. By leveraging data on 33,938 confirmed SARS-CoV-2 cases in eastern Denmark, we considered 2723 variables extracted from electronic health records (EHR) including demographics, diagnoses, medications, laboratory test results and vital parameters. A discrete-time framework for survival modelling enabled us to predict personalized survival curves and explain individual risk factors. Performance on the test set was measured with a weighted concordance index of 0.95 and an area under the curve for precision-recall of 0.71. Age, sex, number of medications, previous hospitalizations and lymphocyte counts were identified as top mortality risk factors. Our explainable survival model developed on EHR data also revealed temporal dynamics of the 22 selected risk factors. Upon further validation, this model may allow direct reporting of personalized survival probabilities in routine care." />
+  <meta name="keywords" content="Machine learning, Prognosis, Viral infection, " />
   
   
   <link rel="canonical" href="http://localhost:1313/publication/xai_sarscov2/" />
@@ -29,8 +29,8 @@
   
   
   
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.4eb2c037b40b5804e82c340114bcf68f4d1d2b2cae106f8fdab4ad226b6f8ee84637b6a1b1bde7b6c97a554950476c5ac4a06a49504c31e5556b34b4f72ecf6a.css"
-    integrity="sha512-TrLAN7QLWAToLDQBFLz2j00dKyyuEG&#43;P2rStImtvjuhGN7ahsb3ntsl6VUlQR2xaxKBqSVBMMeVVazS09y7Pag==" />
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.5c75dc1c7ddc216a2fb65e2d34ef6a1d12f9d46fc8d2ce8ea85701b36e5ddbbe592bcd7cc30fb0fbe042d980df68f3ea2743474118195da7742f14910125b274.css"
+    integrity="sha512-XHXcHH3cIWovtl4tNO9qHRL51G/I0s6OqFcBs25d275ZK818ww&#43;w&#43;&#43;BC2YDfaPPqJ0NHQRgZXad0LxSRASWydA==" />
   
   
   <script type="text/javascript" src="/js/appearance.min.526d85900a54797ce2c81c7307060d73c48ffd452c99bee6b0a1bb1d6b9321c315af45346ea0a211c306d24046cd7513e35a9403d1ba299e77251fc55016d17c.js"
@@ -72,22 +72,23 @@
   
   <meta property="og:url" content="http://localhost:1313/publication/xai_sarscov2/">
   <meta property="og:site_name" content="Adrian G. Zucco">
-  <meta property="og:title" content="Personalized survival probabilities for SARS-CoV-2 positive patients by explainable machine learning">
-  <meta property="og:description" content="Interpretable risk assessment of SARS-CoV-2 positive patients can aid clinicians to implement precision medicine. Here we trained a machine learning model to predict mortality within 12 weeks of a first positive SARS-CoV-2 test. By leveraging data on 33,938 confirmed SARS-CoV-2 cases in eastern Denmark, we considered 2723 variables extracted from electronic health records (EHR) including demographics, diagnoses, medications, laboratory test results and vital parameters. A discrete-time framework for survival modelling enabled us to predict personalized survival curves and explain individual risk factors. Performance on the test set was measured with a weighted concordance index of 0.95 and an area under the curve for precision-recall of 0.71. Age, sex, number of medications, previous hospitalizations and lymphocyte counts were identified as top mortality risk factors. Our explainable survival model developed on EHR data also revealed temporal dynamics of the 22 selected risk factors. Upon further validation, this model may allow direct reporting of personalized survival probabilities in routine care.">
+  <meta property="og:title" content="Personalized Survival Probabilities for SARS-CoV-2 Positive Patients by Explainable Machine Learning">
+  <meta property="og:description" content="Interpretable risk assessment of SARS-CoV-2 positive patients can aid clinicians to implement precision medicine. Here we trained a machine learning model to predict mortality within 12~weeks of a first positive SARS-CoV-2 test. By leveraging data on 33,938 confirmed SARS-CoV-2 cases in eastern Denmark, we considered 2723 variables extracted from electronic health records (EHR) including demographics, diagnoses, medications, laboratory test results and vital parameters. A discrete-time framework for survival modelling enabled us to predict personalized survival curves and explain individual risk factors. Performance on the test set was measured with a weighted concordance index of 0.95 and an area under the curve for precision-recall of 0.71. Age, sex, number of medications, previous hospitalizations and lymphocyte counts were identified as top mortality risk factors. Our explainable survival model developed on EHR data also revealed temporal dynamics of the 22 selected risk factors. Upon further validation, this model may allow direct reporting of personalized survival probabilities in routine care.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="publication">
-    <meta property="article:published_time" content="2022-08-16T00:00:00+00:00">
-    <meta property="article:modified_time" content="2022-08-16T00:00:00+00:00">
-    <meta property="article:tag" content="XAI">
-    <meta property="article:tag" content="Infectious Diseases">
+    <meta property="article:published_time" content="2022-08-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2022-08-01T00:00:00+00:00">
+    <meta property="article:tag" content="Machine Learning">
+    <meta property="article:tag" content="Prognosis">
+    <meta property="article:tag" content="Viral Infection">
     <meta property="og:image" content="http://localhost:1313/publication/xai_sarscov2/featured.png">
 
   
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="http://localhost:1313/publication/xai_sarscov2/featured.png">
-  <meta name="twitter:title" content="Personalized survival probabilities for SARS-CoV-2 positive patients by explainable machine learning">
-  <meta name="twitter:description" content="Interpretable risk assessment of SARS-CoV-2 positive patients can aid clinicians to implement precision medicine. Here we trained a machine learning model to predict mortality within 12 weeks of a first positive SARS-CoV-2 test. By leveraging data on 33,938 confirmed SARS-CoV-2 cases in eastern Denmark, we considered 2723 variables extracted from electronic health records (EHR) including demographics, diagnoses, medications, laboratory test results and vital parameters. A discrete-time framework for survival modelling enabled us to predict personalized survival curves and explain individual risk factors. Performance on the test set was measured with a weighted concordance index of 0.95 and an area under the curve for precision-recall of 0.71. Age, sex, number of medications, previous hospitalizations and lymphocyte counts were identified as top mortality risk factors. Our explainable survival model developed on EHR data also revealed temporal dynamics of the 22 selected risk factors. Upon further validation, this model may allow direct reporting of personalized survival probabilities in routine care.">
+  <meta name="twitter:title" content="Personalized Survival Probabilities for SARS-CoV-2 Positive Patients by Explainable Machine Learning">
+  <meta name="twitter:description" content="Interpretable risk assessment of SARS-CoV-2 positive patients can aid clinicians to implement precision medicine. Here we trained a machine learning model to predict mortality within 12~weeks of a first positive SARS-CoV-2 test. By leveraging data on 33,938 confirmed SARS-CoV-2 cases in eastern Denmark, we considered 2723 variables extracted from electronic health records (EHR) including demographics, diagnoses, medications, laboratory test results and vital parameters. A discrete-time framework for survival modelling enabled us to predict personalized survival curves and explain individual risk factors. Performance on the test set was measured with a weighted concordance index of 0.95 and an area under the curve for precision-recall of 0.71. Age, sex, number of medications, previous hospitalizations and lymphocyte counts were identified as top mortality risk factors. Our explainable survival model developed on EHR data also revealed temporal dynamics of the 22 selected risk factors. Upon further validation, this model may allow direct reporting of personalized survival probabilities in routine care.">
 
   
   <script type="application/ld+json">
@@ -95,10 +96,10 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Publications",
-    "name": "Personalized survival probabilities for SARS-CoV-2 positive patients by explainable machine learning",
-    "headline": "Personalized survival probabilities for SARS-CoV-2 positive patients by explainable machine learning",
+    "name": "Personalized Survival Probabilities for SARS-CoV-2 Positive Patients by Explainable Machine Learning",
+    "headline": "Personalized Survival Probabilities for SARS-CoV-2 Positive Patients by Explainable Machine Learning",
     
-    "abstract": "Interpretable risk assessment of SARS-CoV-2 positive patients can aid clinicians to implement precision medicine. Here we trained a machine learning model to predict mortality within 12 weeks of a first positive SARS-CoV-2 test. By leveraging data on 33,938 confirmed SARS-CoV-2 cases in eastern Denmark, we considered 2723 variables extracted from electronic health records (EHR) including demographics, diagnoses, medications, laboratory test results and vital parameters. A discrete-time framework for survival modelling enabled us to predict personalized survival curves and explain individual risk factors. Performance on the test set was measured with a weighted concordance index of 0.95 and an area under the curve for precision-recall of 0.71. Age, sex, number of medications, previous hospitalizations and lymphocyte counts were identified as top mortality risk factors. Our explainable survival model developed on EHR data also revealed temporal dynamics of the 22 selected risk factors. Upon further validation, this model may allow direct reporting of personalized survival probabilities in routine care.",
+    "abstract": "Interpretable risk assessment of SARS-CoV-2 positive patients can aid clinicians to implement precision medicine. Here we trained a machine learning model to predict mortality within 12~weeks of a first positive SARS-CoV-2 test. By leveraging data on 33,938 confirmed SARS-CoV-2 cases in eastern Denmark, we considered 2723 variables extracted from electronic health records (EHR) including demographics, diagnoses, medications, laboratory test results and vital parameters. A discrete-time framework for survival modelling enabled us to predict personalized survival curves and explain individual risk factors. Performance on the test set was measured with a weighted concordance index of 0.95 and an area under the curve for precision-recall of 0.71. Age, sex, number of medications, previous hospitalizations and lymphocyte counts were identified as top mortality risk factors. Our explainable survival model developed on EHR data also revealed temporal dynamics of the 22 selected risk factors. Upon further validation, this model may allow direct reporting of personalized survival probabilities in routine care.",
     "inLanguage": "en",
     "url" : "http:\/\/localhost:1313\/publication\/xai_sarscov2\/",
     "author" : {
@@ -106,15 +107,15 @@
       "name": "Adrian G. Zucco"
     },
     "copyrightYear": "2022",
-    "dateCreated": "2022-08-16T00:00:00\u002b00:00",
-    "datePublished": "2022-08-16T00:00:00\u002b00:00",
+    "dateCreated": "2022-08-01T00:00:00\u002b00:00",
+    "datePublished": "2022-08-01T00:00:00\u002b00:00",
     
-    "dateModified": "2022-08-16T00:00:00\u002b00:00",
+    "dateModified": "2022-08-01T00:00:00\u002b00:00",
     
-    "keywords": ["xAI","Infectious diseases"],
+    "keywords": ["Machine learning","Prognosis","Viral infection"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "159"
+    "wordCount": "264"
   }]
   </script>
 
@@ -558,7 +559,7 @@
     <a
       class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
       href="/publication/xai_sarscov2/"
-      >Personalized survival probabilities for SARS-CoV-2 positive patients by explainable machine learning</a
+      >Personalized Survival Probabilities for SARS-CoV-2 Positive Patients by Explainable Machine Learning</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
@@ -567,7 +568,7 @@
 
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      Personalized survival probabilities for SARS-CoV-2 positive patients by explainable machine learning
+      Personalized Survival Probabilities for SARS-CoV-2 Positive Patients by Explainable Machine Learning
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -610,7 +611,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2022-08-16T00:00:00&#43;00:00">16 August 2022</time><span class="px-2 text-primary-500">&middot;</span>
+  <time datetime="2022-08-01T00:00:00&#43;00:00">1 August 2022</time><span class="px-2 text-primary-500">&middot;</span>
 
 
 <script type="text/javascript" src="/js/zen-mode.min.eea5245cf9244ecbdf2c150d1c8833226c1541cadf6e98f63a7c9192b1a3676df2c3ec603b14f4cfaaa53971fd9d8955640c0f405bf3de2b43ee7a5fb29ae721.js" integrity="sha512-7qUkXPkkTsvfLBUNHIgzImwVQcrfbpj2OnyRkrGjZ23yw&#43;xgOxT0z6qlOXH9nYlVZAwPQFvz3itD7npfsprnIQ=="></script>
@@ -644,21 +645,23 @@
   
   
   
-     <div style="cursor: pointer;" onclick="window.open(&#34;/authors/adrian-g.-zucco/&#34;,'_self');return false;">Adrian G. Zucco</div>
+     <div style="cursor: pointer;" onclick="window.open(&#34;/authors/zucco-adrian-g./&#34;,'_self');return false;">Zucco, Adrian G.</div>
   
-     ,&nbsp;  <div style="cursor: pointer;" onclick="window.open(&#34;/authors/rudi-agius/&#34;,'_self');return false;">Rudi Agius</div>
+     ,&nbsp;  <div style="cursor: pointer;" onclick="window.open(&#34;/authors/agius-rudi/&#34;,'_self');return false;">Agius, Rudi</div>
   
-     ,&nbsp;  <div style="cursor: pointer;" onclick="window.open(&#34;/authors/rebecka-svanberg/&#34;,'_self');return false;">Rebecka Svanberg</div>
+     ,&nbsp;  <div style="cursor: pointer;" onclick="window.open(&#34;/authors/svanberg-rebecka/&#34;,'_self');return false;">Svanberg, Rebecka</div>
   
-     ,&nbsp;  <div style="cursor: pointer;" onclick="window.open(&#34;/authors/kasper-s.-moestrup/&#34;,'_self');return false;">Kasper S. Moestrup</div>
+     ,&nbsp;  <div style="cursor: pointer;" onclick="window.open(&#34;/authors/moestrup-kasper-s./&#34;,'_self');return false;">Moestrup, Kasper S.</div>
   
-     ,&nbsp;  <div style="cursor: pointer;" onclick="window.open(&#34;/authors/ramtin-z.-marandi/&#34;,'_self');return false;">Ramtin Z. Marandi</div>
+     ,&nbsp;  <div style="cursor: pointer;" onclick="window.open(&#34;/authors/marandi-ramtin-z./&#34;,'_self');return false;">Marandi, Ramtin Z.</div>
   
-     ,&nbsp;  <div style="cursor: pointer;" onclick="window.open(&#34;/authors/cameron-ross-macpherson/&#34;,'_self');return false;">Cameron Ross MacPherson</div>
+     ,&nbsp;  <div style="cursor: pointer;" onclick="window.open(&#34;/authors/macpherson-cameron-ross/&#34;,'_self');return false;">MacPherson, Cameron Ross</div>
   
-     ,&nbsp;  <div style="cursor: pointer;" onclick="window.open(&#34;/authors/jens-lundgren/&#34;,'_self');return false;">Jens Lundgren</div>
+     ,&nbsp;  <div style="cursor: pointer;" onclick="window.open(&#34;/authors/lundgren-jens/&#34;,'_self');return false;">Lundgren, Jens</div>
   
-     ,&nbsp;  <div style="cursor: pointer;" onclick="window.open(&#34;/authors/sisse-r.-ostrowski--carsten-u.-niemann/&#34;,'_self');return false;">Sisse R. Ostrowski &amp; Carsten U. Niemann</div>
+     ,&nbsp;  <div style="cursor: pointer;" onclick="window.open(&#34;/authors/ostrowski-sisse-r./&#34;,'_self');return false;">Ostrowski, Sisse R.</div>
+  
+     ,&nbsp;  <div style="cursor: pointer;" onclick="window.open(&#34;/authors/niemann-carsten-u./&#34;,'_self');return false;">Niemann, Carsten U.</div>
   
   
   
@@ -687,18 +690,26 @@
   
   
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/xai/&#34;,'_self');return false;">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/machine-learning/&#34;,'_self');return false;">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    XAI
+    Machine Learning
   </span>
 </span>
   </span>
   
-  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/infectious-diseases/&#34;,'_self');return false;">
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/prognosis/&#34;,'_self');return false;">
     <span class="flex" style="cursor: pointer;">
   <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Infectious Diseases
+    Prognosis
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/viral-infection/&#34;,'_self');return false;">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Viral Infection
   </span>
 </span>
   </span>
@@ -748,7 +759,27 @@
     
 </h2>
 <p>Interpretable risk assessment of SARS-CoV-2 positive patients can aid clinicians to implement precision medicine. Here we trained a machine learning model to predict mortality within 12 weeks of a first positive SARS-CoV-2 test. By leveraging data on 33,938 confirmed SARS-CoV-2 cases in eastern Denmark, we considered 2723 variables extracted from electronic health records (EHR) including demographics, diagnoses, medications, laboratory test results and vital parameters. A discrete-time framework for survival modelling enabled us to predict personalized survival curves and explain individual risk factors. Performance on the test set was measured with a weighted concordance index of 0.95 and an area under the curve for precision-recall of 0.71. Age, sex, number of medications, previous hospitalizations and lymphocyte counts were identified as top mortality risk factors. Our explainable survival model developed on EHR data also revealed temporal dynamics of the 22 selected risk factors. Upon further validation, this model may allow direct reporting of personalized survival probabilities in routine care.</p>
-
+<blockquote>
+<p>To cite this publication, please use the following BibTeX entry:</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bibtex" data-lang="bibtex"><span class="line"><span class="cl"><span class="nc">@article</span><span class="p">{</span><span class="nl">zuccoPersonalizedSurvivalProbabilities2022</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="na">title</span> <span class="p">=</span> <span class="s">{Personalized Survival Probabilities for {{SARS-CoV-2}} Positive Patients by Explainable Machine Learning}</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="na">author</span> <span class="p">=</span> <span class="s">{Zucco, Adrian G. and Agius, Rudi and Svanberg, Rebecka and Moestrup, Kasper S. and Marandi, Ramtin Z. and MacPherson, Cameron Ross and Lundgren, Jens and Ostrowski, Sisse R. and Niemann, Carsten U.}</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="na">month</span> <span class="p">=</span> <span class="nv">aug</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Scientific Reports}</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="na">volume</span> <span class="p">=</span> <span class="s">{12}</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="na">number</span> <span class="p">=</span> <span class="s">{1}</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="na">pages</span> <span class="p">=</span> <span class="s">{13879}</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="na">publisher</span> <span class="p">=</span> <span class="s">{Nature Publishing Group}</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="na">issn</span> <span class="p">=</span> <span class="s">{2045-2322}</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1038/s41598-022-17953-y}</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="na">urldate</span> <span class="p">=</span> <span class="s">{2022-09-04}</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="na">copyright</span> <span class="p">=</span> <span class="s">{2022 The Author(s)}</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="na">langid</span> <span class="p">=</span> <span class="s">{english}</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="na">keywords</span> <span class="p">=</span> <span class="s">{Machine learning,Prognosis,Viral infection}</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div>
           
           
           
@@ -913,6 +944,7 @@
             
             
             
+            
 
           
           <div class="mb-10"></div>
@@ -955,7 +987,7 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/publication/zucco-explainable-2022/">
+            <a class="flex group mr-3" href="/publication/moestrupreadmissionspostdischargemortality2022/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -967,7 +999,7 @@
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Explainable Machine Learning for Precision Medicine of Patients with Infectious Diseases</span
+                  >Readmissions, Postdischarge Mortality, and Sustained Recovery Among Patients Admitted to Hospital With Coronavirus Disease 2019 (COVID-19)</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
@@ -978,11 +1010,11 @@
         </span>
         <span>
           
-            <a class="flex text-right group ml-3" href="/publication/svanberg-early-2022/">
+            <a class="flex text-right group ml-3" href="/publication/zucco-explainable-2022/">
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Early stimulated immune responses predict clinical disease severity in hospitalized COVID-19 patients</span
+                  >Explainable Machine Learning for Precision Medicine of Patients with Infectious Diseases</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   

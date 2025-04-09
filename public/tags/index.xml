@@ -272,21 +272,11 @@
     </item>
     
     <item>
-      <title>Infectious Diseases</title>
-      <link>http://localhost:1313/tags/infectious-diseases/</link>
-      <pubDate>Tue, 16 Aug 2022 00:00:00 +0000</pubDate>
+      <title>Prognosis</title>
+      <link>http://localhost:1313/tags/prognosis/</link>
+      <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
       <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
-      <guid>http://localhost:1313/tags/infectious-diseases/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>XAI</title>
-      <link>http://localhost:1313/tags/xai/</link>
-      <pubDate>Tue, 16 Aug 2022 00:00:00 +0000</pubDate>
-      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
-      <guid>http://localhost:1313/tags/xai/</guid>
+      <guid>http://localhost:1313/tags/prognosis/</guid>
       <description></description>
       
     </item>

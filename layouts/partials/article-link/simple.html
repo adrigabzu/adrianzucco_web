@@ -31,11 +31,11 @@
 >
   {{/* Card-like container with horizontal layout */}}
   <div
-    class="flex flex-col md:flex-row w-full rounded-lg shadow-md transition-shadow duration-300 ease-in-out group-hover:shadow-xl dark:group-hover:shadow-[0_0_20px_0px_rgba(255,255,255,0.15)] overflow-hidden backdrop-blur-sm border border-neutral-200 dark:border-neutral-700 items-center"
+    class="flex flex-col md:flex-row w-full rounded-lg shadow-md transition-shadow duration-300 ease-in-out group-hover:shadow-xl dark:group-hover:shadow-[0_0_20px_0px_rgba(255,255,255,0.15)] overflow-hidden backdrop-blur-sm border border-neutral-200 dark:border-neutral-700 items-stretch md:items-center" {{/* Changed to items-stretch for col, items-center for row */}}
   >
-    {{/* Left Column: Text Content */}}
+    {{/* Left Column (on md+) / Second Item (on sm): Text Content */}}
     <div
-      class="p-6 {{ if $featured }} md:w-4/5 {{ else }}w-full{{ end }}"
+      class="p-6 w-full flex-shrink-0 {{ if $featured }} md:w-4/5 {{ end }} order-2 md:order-1" {{/* Added w-full and flex-shrink-0 for base */}}
     >
       <h3
         class="text-xl font-bold mb-2 text-neutral-800 dark:text-neutral transition-colors duration-300 group-hover:text-primary-600 dark:group-hover:text-primary-400"
@@ -70,10 +70,10 @@
       {{ end }}
     </div>
 
-    {{/* Right Column: Image */}}
+    {{/* Right Column (on md+) / First Item (on sm): Image */}}
     {{- with $featured -}}
       <div
-        class="w-full md:w-1/5 flex-shrink-0 p-4 md:py-4 md:pr-4 md:pl-0 flex justify-center md:justify-end items-center"
+        class="w-full flex-shrink-0 p-4 md:py-4 md:pr-4 md:pl-0 flex justify-center items-center {{ if $featured }} md:w-1/5 {{ end }} order-1 md:order-2" {{/* Added w-full and flex-shrink-0 for base, removed md:justify-end, added conditional md:w-1/5 */}}
       >
         {{ $img := . }} {{/* Assign original image to $img */}}
         {{ if not $disableImageOptimization }}
@@ -91,12 +91,12 @@
           {{/* --- End Image Processing Logic --- */}}
         {{ end }}
         <img
-          class="rounded-md w-auto h-auto max-w-[200px] max-h-[200px] shadow-md" {{/* Removed object-cover */}}
+          class="rounded-md w-auto h-auto max-w-[200px] max-h-[200px] shadow-md" {{/* Keep this as is */}}
           src="{{ $img.RelPermalink }}"
           alt="{{ $.Title }}"
           loading="lazy"
           width="{{ $img.Width }}"
-          height="{{ $img.Height }}" 
+          height="{{ $img.Height }}"
         />
       </div>
     {{- end -}}

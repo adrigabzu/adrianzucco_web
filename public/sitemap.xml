@@ -28,13 +28,13 @@
   </url>
   <url>
     <loc>http://localhost:1313/publication/zucco-associations-2023/</loc>
-    <lastmod>2023-08-07T16:06:27+02:00</lastmod>
+    <lastmod>2023-09-01T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/publication/rasmussen-metabolic-2023/</loc>
-    <lastmod>2023-09-15T12:28:07+02:00</lastmod>
+    <loc>http://localhost:1313/publication/rasmussenmetabolicprofilingearly2023/</loc>
+    <lastmod>2023-09-01T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -45,68 +45,68 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://localhost:1313/publication/norgaardimpactantibiotictreatment2023a/</loc>
+    <lastmod>2023-07-01T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/project/</loc>
     <lastmod>2023-04-01T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/publication/murray-association-2023/</loc>
-    <lastmod>2023-04-27T11:11:28+02:00</lastmod>
+    <loc>http://localhost:1313/publication/murrayassociationtenelevenmethylcytosine2023/</loc>
+    <lastmod>2023-03-01T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/publication/norgaard-impact-2023/</loc>
-    <lastmod>2023-04-27T11:11:29+02:00</lastmod>
+    <loc>http://localhost:1313/publication/jensenchestxrayimaging2022/</loc>
+    <lastmod>2022-12-01T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/publication/jensen-chest-2022/</loc>
-    <lastmod>2023-04-27T11:11:28+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/publication/svanberg-early-2022/</loc>
-    <lastmod>2023-04-27T11:11:28+02:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/publication/xai_sarscov2/</loc>
-    <lastmod>2022-08-16T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/publication/svanbergearlystimulatedimmune2022/</loc>
+    <lastmod>2022-09-01T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://localhost:1313/publication/zucco-explainable-2022/</loc>
-    <lastmod>2023-05-02T12:22:53+02:00</lastmod>
+    <lastmod>2022-08-01T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/publication/moestrup-readmissions-2022/</loc>
-    <lastmod>2023-04-27T11:11:28+02:00</lastmod>
+    <loc>http://localhost:1313/publication/xai_sarscov2/</loc>
+    <lastmod>2022-08-01T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/publication/gabrielaite-human-2021/</loc>
-    <lastmod>2023-04-27T11:11:28+02:00</lastmod>
+    <loc>http://localhost:1313/publication/moestrupreadmissionspostdischargemortality2022/</loc>
+    <lastmod>2022-08-01T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/publication/ekenberg-association-2021/</loc>
-    <lastmod>2023-04-27T11:11:27+02:00</lastmod>
+    <loc>http://localhost:1313/publication/gabrielaitehumanimmunotypesimpose2021b/</loc>
+    <lastmod>2021-12-01T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/publication/ekenberg-association-2019/</loc>
-    <lastmod>2023-04-27T11:11:27+02:00</lastmod>
+    <loc>http://localhost:1313/publication/ekenbergassociationhumanleukocyte2021a/</loc>
+    <lastmod>2021-04-01T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/publication/ekenbergassociationsinglenucleotidepolymorphisms2019/</loc>
+    <lastmod>2019-09-01T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
