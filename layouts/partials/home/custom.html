@@ -76,7 +76,7 @@
           <!-- Right column: Bio -->
           <div class="w-full md:w-2/3 backdrop-blur-sm"> 
             <!-- Main content from _index.md -->
-            <section class="text-xl prose dark:prose-invert max-w-none"> 
+            <section class="text-lg prose dark:prose-invert max-w-none"> 
               {{ .Content }}
             </section>
           </div> <!-- End Right Column -->
@@ -184,14 +184,14 @@
 </article>
 
 <!-- Background blur effect for the menu -->
-{{ if .Site.Params.homepage.layoutBackgroundBlur | default false }}
-  <div id="background-blur" class="fixed opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl"></div>
-  <script>
+{{ if .Site.Params.homepage.layoutBackgroundBlur | default true }}
+<div id="background-blur" class="fixed opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl"></div>
+<script>
     window.addEventListener('scroll', function (e) {
-      var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-      var background_blur = document.getElementById('background-blur');
-      // Increased blur effect by lowering the divisor
-      background_blur.style.opacity = (scroll / 200);
+        var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        var background_blur = document.getElementById('background-blur');
+        // Increased blur effect by lowering the divisor
+        background_blur.style.opacity = (scroll / 200);
     });
-  </script>
+</script>
 {{ end }}

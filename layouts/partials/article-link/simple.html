@@ -67,7 +67,7 @@
       {{/* Summary */}}
       {{ if .Params.showSummary | default (.Site.Params.list.showSummary | default false) }}
         <div
-          class="prose dark:prose-invert max-w-none text-neutral-700 dark:text-neutral-300 text-sm"
+          class="prose dark:prose-invert max-w-none text-neutral-700 dark:text-neutral-300 text-md"
         >
           {{/* Display the full summary */}}
           {{ .Summary }}
