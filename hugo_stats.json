@@ -209,6 +209,7 @@
       "leading-7",
       "lg:flex-row",
       "lg:h-72",
+      "lg:max-w-6xl",
       "lg:p-[12vh]",
       "lg:px-32",
       "lg:w-1/4",
