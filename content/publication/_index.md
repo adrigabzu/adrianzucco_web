@@ -7,11 +7,11 @@ showHeadingAnchors : false
 showPagination : false
 showReadingTime : false
 showTableOfContents : false
-showTaxonomies : false 
+showTaxonomies : true 
 showWordCount : false
 showSummary : true
 sharingLinks : false
-groupByYear : false
+groupByYear : true
 showZenMode : true
-cardView: false
+# cardView: true
 ---

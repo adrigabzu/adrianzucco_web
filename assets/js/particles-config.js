@@ -62,7 +62,7 @@ function initParticles() {
       },
       "move": {
         "enable": true,
-        "speed": 3, // Adjusted speed
+        "speed": 0.5, // Adjusted speed
         "direction": "none",
         "random": false,
         "straight": false,
