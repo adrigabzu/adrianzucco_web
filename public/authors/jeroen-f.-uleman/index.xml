@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jeroen F. Uleman on Adrian G. Zucco</title>
+    <link>http://localhost:1313/authors/jeroen-f.-uleman/</link>
+    <description>Recent content in Jeroen F. Uleman on Adrian G. Zucco</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>adrigabzu@sund.ku.dk (Adrian G. Zucco)</managingEditor>
+    <webMaster>adrigabzu@sund.ku.dk (Adrian G. Zucco)</webMaster>
+    <copyright>© 2025 Adrian G. Zucco</copyright>
+    <lastBuildDate>Tue, 11 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/authors/jeroen-f.-uleman/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Defining the landscape of sleep problems in young adults using machine learning on nationwide register data from 2 million individuals</title>
+      <link>http://localhost:1313/publication/zucco-poster-sleep-2024/</link>
+      <pubDate>Tue, 11 Jun 2024 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/publication/zucco-poster-sleep-2024/</guid>
+      <description>Background: Sleep problems among young adults pose a major public health concern. To understand the patterns underlying the complexity of sleep in this population, we report trends in sleep problems and clusters of life-course factors using Machine Learning on nationwide surveys and registries. &lt;br /&gt; &lt;strong&gt;Methods&lt;/strong&gt;:  We explored trends in the last decade using data from the Danish National Health Survey, MEDSTAT and The Danish National Patient Registry in self-reported sleep problems, medications such as melatonin and diagnoses for organic and non-organic sleep disorders. We used Natural Language Processing to learn life-course constellations based on registry data from the DANLIFE cohort of 2 million individuals. We then explored clusters of childhood adversity, diagnoses, medications and medical procedures centered around sleep-related medical terms to identify related factors. &lt;br /&gt; &lt;strong&gt;Results&lt;/strong&gt;:  In the last decade, self-reported sleep problems and sleep medications have been increasing while diagnoses have remained steady. When looking at life-course constellations based on known sleep-related diagnoses, medications and medical procedures we found multiple clusters. Organic clusters involved factors related to respiratory issues, surgical interventions and fatigue from various causes while non-organic clusters were populated by mood and neurodevelopmental disorders. Interventions also differed among clusters where organic clusters had a higher prevalence of pharmacological and medical procedures while non-organic clusters reflected an enrichment in parental counselling and individual psychoeducation. &lt;br /&gt; &lt;strong&gt;Conclusion&lt;/strong&gt;:  Sleep problems in young adults are increasing. By zooming out to identify clusters and life-course constellations of sleep problems, we provide a basis for zooming into the mechanisms and targeted interventions for young adults.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/publication/zucco-poster-sleep-2024/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

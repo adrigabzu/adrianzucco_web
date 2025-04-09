@@ -291,45 +291,5 @@
       
     </item>
     
-    <item>
-      <title>About</title>
-      <link>http://localhost:1313/tags/about/</link>
-      <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
-      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
-      <guid>http://localhost:1313/tags/about/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>First</title>
-      <link>http://localhost:1313/tags/first/</link>
-      <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
-      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
-      <guid>http://localhost:1313/tags/first/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>New</title>
-      <link>http://localhost:1313/tags/new/</link>
-      <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
-      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
-      <guid>http://localhost:1313/tags/new/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Welcome</title>
-      <link>http://localhost:1313/tags/welcome/</link>
-      <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
-      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
-      <guid>http://localhost:1313/tags/welcome/</guid>
-      <description></description>
-      
-    </item>
-    
   </channel>
 </rss>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cameron Ross MacPherson on Adrian G. Zucco</title>
+    <link>http://localhost:1313/authors/cameron-ross-macpherson/</link>
+    <description>Recent content in Cameron Ross MacPherson on Adrian G. Zucco</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>adrigabzu@sund.ku.dk (Adrian G. Zucco)</managingEditor>
+    <webMaster>adrigabzu@sund.ku.dk (Adrian G. Zucco)</webMaster>
+    <copyright>© 2025 Adrian G. Zucco</copyright>
+    <lastBuildDate>Fri, 01 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/authors/cameron-ross-macpherson/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Metabolic Profiling Early Post-Allogeneic Haematopoietic Cell Transplantation in the Context of CMV Infection</title>
+      <link>http://localhost:1313/publication/rasmussen-metabolic-2023/</link>
+      <pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/publication/rasmussen-metabolic-2023/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Personalized survival probabilities for SARS-CoV-2 positive patients by explainable machine learning</title>
+      <link>http://localhost:1313/publication/xai_sarscov2/</link>
+      <pubDate>Tue, 16 Aug 2022 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/publication/xai_sarscov2/</guid>
+      <description>Interpretable risk assessment of SARS-CoV-2 positive patients can aid clinicians to implement precision medicine. Here we trained a machine learning model to predict mortality within 12 weeks of a first positive SARS-CoV-2 test. By leveraging data on 33,938 confirmed SARS-CoV-2 cases in eastern Denmark, we considered 2723 variables extracted from electronic health records (EHR) including demographics, diagnoses, medications, laboratory test results and vital parameters. A discrete-time framework for survival modelling enabled us to predict personalized survival curves and explain individual risk factors. Performance on the test set was measured with a weighted concordance index of 0.95 and an area under the curve for precision-recall of 0.71. Age, sex, number of medications, previous hospitalizations and lymphocyte counts were identified as top mortality risk factors. Our explainable survival model developed on EHR data also revealed temporal dynamics of the 22 selected risk factors. Upon further validation, this model may allow direct reporting of personalized survival probabilities in routine care.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/publication/xai_sarscov2/featured.png" />
+    </item>
+    
+    <item>
+      <title>Association Between Single-Nucleotide Polymorphisms in HLA Alleles and Human Immunodeficiency Virus Type 1 Viral Load in Demographically Diverse, Antiretroviral Therapy–Naive Participants From the Strategic Timing of AntiRetroviral Treatment Trial</title>
+      <link>http://localhost:1313/publication/ekenberg-association-2019/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/publication/ekenberg-association-2019/</guid>
+      <description> Title # </description>
+      
+    </item>
+    
+  </channel>
+</rss>

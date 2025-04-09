@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Personalized survival probabilities for SARS-CoV-2 positive patients by explainable machine learning on Adrian G. Zucco</title>
+    <link>http://localhost:1313/publication/xai_sarscov2/</link>
+    <description>Recent content in Personalized survival probabilities for SARS-CoV-2 positive patients by explainable machine learning on Adrian G. Zucco</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>adrigabzu@sund.ku.dk (Adrian G. Zucco)</managingEditor>
+    <webMaster>adrigabzu@sund.ku.dk (Adrian G. Zucco)</webMaster>
+    <copyright>© 2025 Adrian G. Zucco</copyright>
+    <lastBuildDate>Tue, 16 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/publication/xai_sarscov2/index.xml" rel="self" type="application/rss+xml" />
+    
+  </channel>
+</rss>

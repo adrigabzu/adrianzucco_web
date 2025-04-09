@@ -31,18 +31,16 @@
 >
   {{/* Card-like container with horizontal layout */}}
   <div
-    class="flex flex-col md:flex-row w-full rounded-lg shadow-md transition-shadow duration-300 ease-in-out group-hover:shadow-xl overflow-hidden backdrop-blur-sm border border-neutral-200 dark:border-neutral-700 items-center"
+    class="flex flex-col md:flex-row w-full rounded-lg shadow-md transition-shadow duration-300 ease-in-out group-hover:shadow-xl dark:group-hover:shadow-[0_0_20px_0px_rgba(255,255,255,0.15)] overflow-hidden backdrop-blur-sm border border-neutral-200 dark:border-neutral-700 items-center"
   >
     {{/* Left Column: Text Content */}}
-    {{/* Takes 2/3 width on medium+ screens if image exists, full width otherwise */}}
     <div
-      class="p-6 {{ if $featured }}md:w-2/3{{ else }}w-full{{ end }}"
+      class="p-6 {{ if $featured }} md:w-4/5 {{ else }}w-full{{ end }}"
     >
       <h3
         class="text-xl font-bold mb-2 text-neutral-800 dark:text-neutral transition-colors duration-300 group-hover:text-primary-600 dark:group-hover:text-primary-400"
       >
         {{ .Title | emojify }}
-        {{/* External link icon */}}
         {{ with .Params.externalUrl }}
           <span
             class="text-xs align-top cursor-default text-neutral-400 dark:text-neutral-500"
@@ -51,57 +49,55 @@
             <span class="ltr:hidden">&#8598;</span>
           </span>
         {{ end }}
-        {{/* Draft Badge */}}
         {{ if and .Draft .Site.Params.article.showDraftLabel }}
           <span class="ml-2 rtl:mr-2 align-middle text-xs"
             >{{ partial "badge.html" (i18n "article.draft" | emojify) }}</span
           >
         {{ end }}
       </h3>
-
-      {{/* Article Meta */}}
       <div class="text-sm text-neutral-500 dark:text-neutral-400 mb-3">
         {{ partial "article-meta/basic.html" . }}
       </div>
-
-      {{/* Summary */}}
       {{ if .Params.showSummary | default (.Site.Params.list.showSummary | default false) }}
         <div
           class="prose dark:prose-invert max-w-none text-neutral-700 dark:text-neutral-300 text-md"
         >
-          {{/* Display the full summary */}}
           {{ .Summary }}
         </div>
       {{ end }}
-
-      {{/* Extend Hook */}}
       {{ if templates.Exists "partials/extend-article-link.html" }}
         <div class="mt-4">{{ partial "extend-article-link.html" . }}</div>
       {{ end }}
     </div>
 
     {{/* Right Column: Image */}}
-    {{/* Takes 1/3 width on medium+ screens, appears below text on small screens */}}
     {{- with $featured -}}
       <div
-        class="w-full md:w-1/3 flex-shrink-0 p-4 md:py-4 md:pr-4 md:pl-0 flex justify-center md:justify-end items-center"
+        class="w-full md:w-1/5 flex-shrink-0 p-4 md:py-4 md:pr-4 md:pl-0 flex justify-center md:justify-end items-center"
       >
-        {{/* Added md:py-4 for vertical padding on medium+ screens */}}
-        {{ $img := . }}
+        {{ $img := . }} {{/* Assign original image to $img */}}
         {{ if not $disableImageOptimization }}
-          {{/* Resize image to square format */}}
-          {{ $img = $img.Fill "200x200 Center" }}
-          {{/* Kept smaller square image */}}
+          {{/* --- Start Image Processing Logic --- */}}
+          {{ $originalWidth := $img.Width }}
+          {{ $originalHeight := $img.Height }}
+
+          {{ if eq $originalWidth $originalHeight }}
+            {{/* If image is square, resize to 200x200 */}}
+            {{ $img = $img.Resize "200x200" }}
+          {{ else }}
+            {{/* If image is not square, resize height to 200px, keep aspect ratio */}}
+            {{ $img = $img.Resize "x200" }}
+          {{ end }}
+          {{/* --- End Image Processing Logic --- */}}
         {{ end }}
         <img
-          class="rounded-md w-auto h-auto max-w-[200px] max-h-[200px] object-cover shadow-md"
+          class="rounded-md w-auto h-auto max-w-[200px] max-h-[200px] shadow-md" {{/* Removed object-cover */}}
           src="{{ $img.RelPermalink }}"
           alt="{{ $.Title }}"
           loading="lazy"
-          width="200"
-          height="200"
+          width="{{ $img.Width }}"
+          height="{{ $img.Height }}" 
         />
-        {{/* Image constraints kept */}}
       </div>
     {{- end -}}
   </div>

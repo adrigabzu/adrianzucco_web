@@ -12,7 +12,7 @@ showWordCount : false
 showSummary : true
 sharingLinks : false
 groupByYear : false
-showZenMode : true
+showZenMode : false
 cardView: false
 ---
 

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Alejandro Arenas-Pinto on Adrian G. Zucco</title>
+    <link>http://localhost:1313/authors/alejandro-arenas-pinto/</link>
+    <description>Recent content in Alejandro Arenas-Pinto on Adrian G. Zucco</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>adrigabzu@sund.ku.dk (Adrian G. Zucco)</managingEditor>
+    <webMaster>adrigabzu@sund.ku.dk (Adrian G. Zucco)</webMaster>
+    <copyright>© 2025 Adrian G. Zucco</copyright>
+    <lastBuildDate>Wed, 01 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/authors/alejandro-arenas-pinto/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Human Immunotypes Impose Selection on Viral Genotypes Through Viral Epitope Specificity</title>
+      <link>http://localhost:1313/publication/gabrielaite-human-2021/</link>
+      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
+      <author>adrigabzu@sund.ku.dk (Adrian G. Zucco)</author>
+      <guid>http://localhost:1313/publication/gabrielaite-human-2021/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

@@ -1,7 +1,7 @@
 ---
 title: iTol - Functional HLA consensus clustering based on predicted binding affinities to HIV peptides
 summary:
-categories: ["code"]  
+categories: ["Interactive plot"]  
 tags: ["HIV","Immunology"]
 date: "2024-04-01"
 showSummary: true
