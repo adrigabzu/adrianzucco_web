@@ -1,7 +1,8 @@
 {{ define "main" }}
 {{ .Scratch.Set "scope" "single" }}
 
-<article>
+<!-- Change max-w-# for a narrower layout. Adjust as needed. -->
+<article class="mx-auto max-w-7xl">
   {{ if .Params.showHero | default (.Site.Params.article.showHero | default false) }}
   {{ $heroStyle := .Params.heroStyle }}
   {{ if not $heroStyle }}{{ $heroStyle = .Site.Params.article.heroStyle }}{{ end }}
@@ -13,17 +14,21 @@
   {{ end }}
   {{ end }}
 
-  <header id="single_header" class="mt-5 max-w-prose">
+  <!-- Removed max-w-prose -->
+  <header id="single_header" class="mt-5">
     {{ if .Params.showBreadcrumbs | default (.Site.Params.article.showBreadcrumbs | default false) }}
     {{ partial "breadcrumbs.html" . }}
     {{ end }}
-    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+    <!-- Added text-center to center the title -->
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral text-center">
       {{ .Title | emojify }}
     </h1>
-    <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+    <!-- Added text-center to center the meta info -->
+    <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden text-center">
       {{ partial "article-meta/basic.html" (dict "context" . "scope" "single") }}
     </div>
 
+    {{/* Author section - usually better left-aligned unless specifically designed otherwise */}}
     {{ $authorsData := .Site.Data.authors }}
     {{ $taxonomies := .Site.Taxonomies.authors }}
     {{ $baseURL := .Site.BaseURL }}
@@ -70,87 +75,129 @@
 
   </header>
   
-  <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+  <!-- Removed prose dark:prose-invert and max-w-full -->
+  <section class="flex flex-col mt-0 lg:flex-row">
     
+    {{/* TOC / Related Posts Sidebar */}}
     {{ if or (and (.Params.showTableOfContents | default (.Site.Params.article.showTableOfContents | default false)) (in
-    .TableOfContents "<ul")) (.Site.Params.article.showRelatedPosts | default false) }} <div
-      class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
+    .TableOfContents "<ul")) (.Site.Params.article.showRelatedPosts | default false) }} 
+    <div class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
       <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky {{ if hasPrefix .Site.Params.header.layout "fixed" -}}
         lg:top-[140px]{{ else }}lg:top-10{{ end }}">
 
         {{ if and (.Params.showTableOfContents | default (.Site.Params.article.showTableOfContents | default false)) (in
-        .TableOfContents "<ul") }} {{ partial "toc.html" . }} {{ end }} {{ if .Site.Params.article.showRelatedPosts |
-          default false }} sd {{ end }} </div>
-      </div>
-      {{ end }}
-
-      <div class="min-w-0 min-h-0 max-w-fit">
+        .TableOfContents "<ul") }} 
+          {{ partial "toc.html" . }} 
+        {{ end }} 
         
-        {{ partial "series/series.html" . }}
+        {{ if .Site.Params.article.showRelatedPosts | default false }} 
+          sd {{/* Assuming this 'sd' is placeholder or debug, leaving it */}}
+        {{ end }} 
+      </div>
+    </div>
+    {{ end }}
 
-        <div class="article-content max-w-prose mb-20">
-          {{ .Content }}
-          {{ $defaultReplyByEmail := .Site.Params.replyByEmail }}
-          {{ $replyByEmail := default $defaultReplyByEmail .Params.replyByEmail }}
-          {{ if $replyByEmail }}
-            <strong class="block mt-8">
-              <a target="_blank" 
-              class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-              href="mailto:{{ .Site.Params.Author.email }}?subject={{ replace (printf "Reply to %s" .Title) "\"" "'" }}">
-                Reply by Email
-              </a>
-            </strong>
+    {{/* Main Content Area */}}
+    <!-- Changed max-w-fit to w-full -->
+    <div class="min-w-0 min-h-0 w-full">
+        
+      {{ partial "series/series.html" . }}
+
+      {{/* START: Added Feature Image Section */}}
+      {{ if .Params.image }}
+        <div class="mb-8 flex justify-center"> {{/* Centering container with bottom margin */}}
+          {{ $imageResource := "" }}
+          {{/* Try to get the image as a resource first */}}
+          {{ with resources.Get .Params.image }}
+            {{ $imageResource = . }}
+          {{ end }}
+
+          {{ if $imageResource }}
+            {{/* Image found in assets, use its permalink */}}
+            {{/* You could add image processing here, e.g., .Resize "800x" */}}
+            <img src="{{ $imageResource.RelPermalink }}"
+                 alt="{{ $.Params.image_alt | default $.Title }}"
+                 class="max-w-full h-auto rounded-lg shadow-md"> {{/* Basic styling */}}
+          {{ else }}
+            {{/* Image not in assets, assume it's a URL or relative path */}}
+            <img src="{{ .Params.image | relURL }}" {{/* Use relURL for safety with base paths */}}
+                 alt="{{ .Params.image_alt | default .Title }}"
+                 class="max-w-full h-auto rounded-lg shadow-md"> {{/* Basic styling */}}
           {{ end }}
         </div>
+      {{ end }}
+      {{/* END: Added Feature Image Section */}}
+
+      <!-- Added prose dark:prose-invert for styling -->
+      <!-- Added max-w-none to override prose's default max-width -->
+      <!-- Added text-justify to justify the content -->
+      <div class="article-content prose dark:prose-invert max-w-none text-justify mb-20">
+        {{ .Content }}
+        {{ $defaultReplyByEmail := .Site.Params.replyByEmail }}
+        {{ $replyByEmail := default $defaultReplyByEmail .Params.replyByEmail }}
+        {{ if $replyByEmail }}
+          <!-- Centering the reply button container -->
+          <strong class="block mt-8 text-center"> 
+            <a target="_blank" 
+            class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+            href="mailto:{{ .Site.Params.Author.email }}?subject={{ replace (printf "Reply to %s" .Title) "\"" "'" }}">
+              Reply by Email
+            </a>
+          </strong>
+        {{ end }}
+      </div>
         
-        {{ if (.Params.showAuthorBottom | default ( .Site.Params.article.showAuthorBottom | default false)) }}
+      {{ if (.Params.showAuthorBottom | default ( .Site.Params.article.showAuthorBottom | default false)) }}
 
-          {{ if .Params.showAuthor | default (.Site.Params.article.showAuthor | default true) }}
-            {{ $showAuthor = 1 }}
-            {{ partial "author.html" . }}
-          {{ end }}
-
-          {{ range $author := .Page.Params.authors }}
-            {{ $authorData := index $authorsData $author }}
-            {{- if $authorData -}}
-              {{ range $taxonomyname, $taxonomy := $taxonomies }}
-                {{ if (eq $taxonomyname $author) }}
-                  {{ $taxonomyLink = delimit (slice $baseURL "authors/" $author "/") "" }}
-                {{ end }}
-              {{ end }}
-              {{ partial "author-extra.html" (dict "context" . "data" $authorData "link" $taxonomyLink) }}
-            {{- end -}}
-          {{ end }}
-
-          {{ if or $taxonomyLink $showAuthor }}
-          <div class="mb-10"></div>
-          {{ end }}
-
+        {{ if .Params.showAuthor | default (.Site.Params.article.showAuthor | default true) }}
+          {{ $showAuthor = 1 }}
+          {{ partial "author.html" . }}
         {{ end }}
 
-        {{ partial "series/series-closed.html" . }}
-        {{ partial "sharing-links.html" . }}
-        {{ partial "related.html" . }}  
-      </div>
-     
-      {{ $translations := .AllTranslations }}
-      {{ with .File }}
-        {{ $path := .Path }}
-        {{range $translations}}
-          {{ $lang := print "."  .Lang  ".md" }}
-          {{ $path = replace $path $lang ".md" }}
-        {{end}}
-      <script>
-        var oid = "views_{{ $path }}"
-        var oid_likes = "likes_{{ $path }}"
-      </script>
-      {{ $jsPage := resources.Get "js/page.js" }}
-      {{ $jsPage = $jsPage | resources.Minify | resources.Fingerprint "sha512" }}
-      <script type="text/javascript" src="{{ $jsPage.RelPermalink }}" integrity="{{ $jsPage.Data.Integrity }}"></script>
+        {{ range $author := .Page.Params.authors }}
+          {{ $authorData := index $authorsData $author }}
+          {{- if $authorData -}}
+            {{ range $taxonomyname, $taxonomy := $taxonomies }}
+              {{ if (eq $taxonomyname $author) }}
+                {{ $taxonomyLink = delimit (slice $baseURL "authors/" $author "/") "" }}
+              {{ end }}
+            {{ end }}
+            {{ partial "author-extra.html" (dict "context" . "data" $authorData "link" $taxonomyLink) }}
+          {{- end -}}
+        {{ end }}
+
+        {{ if or $taxonomyLink $showAuthor }}
+        <div class="mb-10"></div>
+        {{ end }}
+
       {{ end }}
+
+      {{ partial "series/series-closed.html" . }}
+      {{ partial "sharing-links.html" . }}
+      {{ partial "related.html" . }}  
+    </div>
+     
+    {{/* Script section remains unchanged relative to layout */}}
+    {{ $translations := .AllTranslations }}
+    {{ with .File }}
+      {{ $path := .Path }}
+      {{range $translations}}
+        {{ $lang := print "."  .Lang  ".md" }}
+        {{ $path = replace $path $lang ".md" }}
+      {{end}}
+    <script>
+      var oid = "views_{{ $path }}"
+      var oid_likes = "likes_{{ $path }}"
+    </script>
+    {{ $jsPage := resources.Get "js/page.js" }}
+    {{ $jsPage = $jsPage | resources.Minify | resources.Fingerprint "sha512" }}
+    <script type="text/javascript" src="{{ $jsPage.RelPermalink }}" integrity="{{ $jsPage.Data.Integrity }}"></script>
+    {{ end }}
   
-    </section>
-  <footer class="pt-8 max-w-prose print:hidden">
+  </section>
+
+  <!-- Removed max-w-prose, Added text-center -->
+  <footer class="pt-8 print:hidden text-center">
 
     {{ partial "article-pagination.html" . }}
     {{ if .Params.showComments | default (.Site.Params.article.showComments | default false) }}
