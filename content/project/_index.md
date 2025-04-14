@@ -13,7 +13,5 @@ showSummary : true
 sharingLinks : false
 groupByYear : false
 showZenMode : false
-cardView: false
+cardView: true
 ---
-
-This is a collection of projects I have been involved in, either as a lead or as a collaborator.

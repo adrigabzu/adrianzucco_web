@@ -11,6 +11,6 @@ showWordCount : false
 showSummary : false
 sharingLinks : false
 groupByYear : false
-showZenMode : true
+showZenMode : false
 # cardView: true
 ---

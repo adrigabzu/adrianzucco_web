@@ -12,7 +12,7 @@ showWordCount : false
 showSummary : true
 sharingLinks : false
 groupByYear : true
-showZenMode : true
+showZenMode : false
 cardView: false
 layout: publication_list
 ---

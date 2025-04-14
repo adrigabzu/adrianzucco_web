@@ -22,7 +22,7 @@ links:
 - name: "URL"
   url: "https://doi.org/10.1097/QAD.0000000000003557"
 featured: true
-showZenMode : true
+showZenMode : false
 ---
 ## Abstract
 

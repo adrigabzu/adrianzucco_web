@@ -26,7 +26,7 @@ tags:
 - Life course
 - Complexity
 featured: true
-showZenMode : true
+showZenMode : false
 ---
 
 ## Abstract

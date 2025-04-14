@@ -48,9 +48,9 @@
   {{ $meta.Add "partials" (slice (partial "meta/edit.html" .)) }}
 {{ end }}
 
-{{ if and (eq $scope "single") (.Params.showZenMode | default (.Site.Params.article.showZenMode | default false)) }}
+<!-- {{ if and (eq $scope "single") (.Params.showZenMode | default (.Site.Params.article.showZenMode | default false)) }}
   {{ $meta.Add "partials" (slice (partial "meta/zen-mode.html" .)) }}
-{{ end }}
+{{ end }} -->
 
 
 <div class="flex flex-row flex-wrap items-center">
